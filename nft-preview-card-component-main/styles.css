@@ -25,16 +25,127 @@ Desktop - 1445px;
   box-sizing: border-box;
 }
 
+html {
+  font-size: 18px;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
 body {
   font-family: var(--font-family);
   background-color: var(--bg-main);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* **** Card **** */
+
+.card {
+  width: 327px;
+  padding: 24px;
+  border-radius: 15px;
+  background: var(--bg-card);
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 376px) {
+  .card {
+    width: 350px;
+  }
+}
+
+.main-img {
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.title {
+  color: var(--white);
+  font-weight: var(--weight-bold);
+  margin-bottom: 12px;
+}
+.text {
+  color: var(--clr-primary);
+  font-weight: var(--weight-light);
+}
+
+.icon-container {
+  margin: 16px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.etherium {
+  width: 11px;
+  height: 18px;
+}
+
+.etherium-text {
+  font-size: 15px;
+  font-weight: var(--weight-bold);
+  color: var(--clr-secondary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.clock {
+  width: 16px;
+  height: 16px;
+  color: var(--clr-primary);
+}
+
+.clock-text {
+  font-size: 15px;
+  color: var(--clr-primary);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.line {
+  height: 1px;
+  background-color: var(--line);
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.author-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.author-pic {
+  width: 33px;
+  height: 33px;
+  border: 1px solid white;
+  border-radius: 33px;
+}
+
+.creation {
+  display: flex;
+  gap: 5px;
+  color: var(--clr-primary);
+  font-size: 15px;
+}
+
+.name {
+  color: var(--white);
+  font-size: 15px;
 }
 
 /* **** Attribution **** */
 
 .attribution {
   position: absolute;
-  bottom: 1rem;
+  bottom: 0.5rem;
   left: 50%;
   margin-left: -121.8px;
   color: var(--white);
