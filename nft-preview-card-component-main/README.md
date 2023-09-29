@@ -29,8 +29,8 @@ Desktop
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Netlify: [Add solution URL here](https://fm-gfunk77-nft-preview-card.netlify.app/)
+- github: [Add live site URL here](https://github.com/gfunk77/Frontend-Mentor/tree/main/nft-preview-card-component-main)
 
 ### Built with
 
