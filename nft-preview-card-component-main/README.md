@@ -24,6 +24,7 @@ Users should be able to:
 
 Mobile
 ![](./solution-mobile.png)
+
 Desktop
 ![](./soultion-desktop.png)
 
