@@ -13,6 +13,7 @@
   --light-gray: hsl(212, 45%, 89%);
   --grayish-blue: hsl(220, 15%, 55%);
   --dark-blue: hsl(218, 44%, 22%);
+  --transition: all 400ms linear;
 }
 
 html {
@@ -24,6 +25,7 @@ body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  background-color: var(--light-gray);
 }
 
 /* **** Attribution **** */
@@ -38,11 +40,11 @@ body {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--grayish-blue);
   transition: var(--transition);
 }
 
 .attribution a:hover {
   cursor: pointer;
-  color: var(--clr-secondary);
+  color: var(--dark-blue);
 }
