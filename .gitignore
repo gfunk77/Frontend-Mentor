@@ -4,8 +4,7 @@
 #####################################################
 *.sketch
 *.fig
-qr-code-component-figma/
-nft-preview-card-component-figma/
+Figma/
 
 # Avoid accidental XD upload if you convert the design file
 ###############################################
