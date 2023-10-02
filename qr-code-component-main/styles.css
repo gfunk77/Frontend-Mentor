@@ -12,8 +12,9 @@
   --white: hsl(0, 0%, 100%);
   --light-gray: hsl(212, 45%, 89%);
   --grayish-blue: hsl(220, 15%, 55%);
-  --dark-blue: hsl(218, 44%, 22%);
+  --dark-blue: #1f3251;
   --transition: all 400ms linear;
+  --shadow: 0px 25px 25px 0px rgba(0, 0, 0, 0.05);
 }
 
 html {
@@ -26,6 +27,45 @@ body {
   margin: 0;
   box-sizing: border-box;
   background-color: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  max-width: 320px;
+  max-height: 497px;
+  padding: 16px;
+  border-radius: 20px;
+  background-color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.content {
+  text-align: center;
+  padding: 0 16px;
+  margin: 24px auto;
+}
+
+.heading {
+  font-weight: 700;
+  color: var(--dark-blue);
+  margin-bottom: 16px;
+}
+
+.text {
+  width: 256px;
+  padding: 0 16px;
+  font-weight: 400;
+  color: var(--grayish-blue);
 }
 
 /* **** Attribution **** */
@@ -35,7 +75,7 @@ body {
   bottom: 0.5rem;
   left: 50%;
   margin-left: -121.8px;
-  color: var(--white);
+  color: #2c7dfa;
   font-size: 11px;
   text-align: center;
 }
