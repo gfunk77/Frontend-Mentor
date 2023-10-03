@@ -6,17 +6,6 @@
 - Desktop: 1440px
 */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-family: var(--font-regular);
-  font-size: 15px;
-}
-
 :root {
   --font-regular: 'Lexend Deca', sans-serif;
   --font-bold: 'Big Shoulders Display', cursive;
@@ -28,6 +17,86 @@ html {
   --transition: all 400ms linear;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-regular);
+  font-size: 15px;
+}
+
+body {
+  background-color: var(--gray-b-h-b);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  width: 327px;
+  margin: 88px 24px;
+}
+
+.card {
+  padding: 48px;
+}
+
+.sedans {
+  background-color: var(--bright-orange);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.suvs {
+  background-color: var(--dark-cyan);
+}
+
+.luxury {
+  background-color: var(--very-dark-cyan);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.img {
+  margin-bottom: 35px;
+}
+
+.heading {
+  font-family: var(--font-bold);
+  font-size: 40px;
+  text-transform: uppercase;
+  color: var(--gray-b-h-b);
+  margin-bottom: 25px;
+}
+
+.text {
+  color: var(--white-para);
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+
+.btn {
+  width: 146px;
+  height: 48px;
+  border-radius: 25px;
+  background-color: var(--gray-b-h-b);
+  line-height: 25px;
+  border: none;
+  font-family: var(--font-regular);
+  font-size: 15px;
+}
+.btn-sedan {
+  color: var(--bright-orange);
+}
+.btn-suv {
+  color: var(--dark-cyan);
+}
+.btn-luxury {
+  color: var(--very-dark-cyan);
+}
 /* **** Attribution **** */
 
 .attribution {
