@@ -30,14 +30,6 @@ html {
 
 body {
   background-color: var(--gray-b-h-b);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  width: 327px;
-  margin: 88px 24px;
 }
 
 .card {
