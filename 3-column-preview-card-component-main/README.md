@@ -23,23 +23,21 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![](./screenshot.jpg)
+![](./solutions/3-column-mobile.png)
 
 Desktop
-![](./screenshot.jpg)
+![](./solutions/3-column-desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Site](https://gfunk77-3-column-preview-card.netlify.app)
+- github: [gfunk77](https://github.com/gfunk77)
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+- html and css
+- flexbox
+- mobile-first workflow
 
 ## Author
 
