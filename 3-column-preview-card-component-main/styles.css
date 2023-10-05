@@ -14,6 +14,7 @@
   --very-dark-cyan: hsl(179, 100%, 13%);
   --white-para: hsla(0, 0%, 100%, 0.75);
   --gray-b-h-b: hsl(0, 0%, 95%);
+  --radius: 8px;
   --transition: all 400ms linear;
 }
 
@@ -32,14 +33,41 @@ body {
   background-color: var(--gray-b-h-b);
 }
 
+.main {
+  margin: 5.4em 1.6em;
+}
+
+@media screen and (min-width: 1310px) {
+  body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+  .main {
+    display: flex;
+    margin: 10em 18em;
+  }
+
+  article.sedans {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--radius);
+  }
+  article.luxury {
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: var(--radius);
+  }
+  p.text {
+    margin-bottom: 83px;
+  }
+}
 .card {
-  padding: 48px;
+  padding: 3em;
 }
 
 .sedans {
   background-color: var(--bright-orange);
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
+  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
 }
 
 .suvs {
@@ -48,8 +76,8 @@ body {
 
 .luxury {
   background-color: var(--very-dark-cyan);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: var(--radius);
+  border-bottom-right-radius: var(--radius);
 }
 
 .img {
@@ -71,14 +99,20 @@ body {
 }
 
 .btn {
-  width: 146px;
-  height: 48px;
+  padding: 0.75em 2em;
   border-radius: 25px;
   background-color: var(--gray-b-h-b);
-  line-height: 25px;
-  border: none;
+  line-height: 1.5em;
+  border: 2px solid transparent;
   font-family: var(--font-regular);
   font-size: 15px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--white-para);
+  border: 2px solid var(--white-para);
+  transition: var(--transition);
 }
 .btn-sedan {
   color: var(--bright-orange);
@@ -88,24 +122,4 @@ body {
 }
 .btn-luxury {
   color: var(--very-dark-cyan);
-}
-/* **** Attribution **** */
-
-.attribution {
-  position: absolute;
-  bottom: 0.5rem;
-  left: 50%;
-  margin-left: -121.8px;
-  color: var(--very-dark-cyan);
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: var(--dark-cyan);
-  transition: var(--transition);
-}
-
-.attribution a:hover {
-  cursor: pointer;
-  color: var(--bright-orange);
 }
