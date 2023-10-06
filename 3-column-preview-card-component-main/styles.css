@@ -34,18 +34,20 @@ body {
 }
 
 .main {
-  margin: 5.4em 1.6em;
+  max-width: 327px;
+  margin: 5.4em auto;
 }
 
-@media screen and (min-width: 1310px) {
+@media screen and (min-width: 944px) {
   body {
     display: flex;
     align-items: center;
     height: 100vh;
   }
   .main {
+    max-width: 920px;
     display: flex;
-    margin: 10em 18em;
+    margin: 10em auto;
   }
 
   article.sedans {
