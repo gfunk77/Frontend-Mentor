@@ -47,7 +47,6 @@ body {
   .main {
     max-width: 920px;
     display: flex;
-    margin: 10em auto;
   }
 
   article.sedans {
