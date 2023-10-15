@@ -10,12 +10,139 @@ html {
   font-family: 'Karla', sans-serif;
 }
 
+body {
+  background-color: var(--gray-blue);
+}
+
 :root {
-  --cyan: hsl(179, 62%, 43%);
+  --cyan: #2ab2af;
   --yellow: hsl(71, 73%, 54%);
 
   --gray: hsl(204, 43%, 93%);
-  --gray-blue: hsl(218, 22%, 67%);
+  --gray-blue: #98a6bd;
+}
+
+@media screen and (min-width: 635px) {
+  .main {
+    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+  .outer-container {
+    border-radius: 8px;
+    margin: 0;
+  }
+  .lower-container {
+    display: flex;
+  }
+
+  .community__para {
+    width: 85%;
+  }
+
+  .subscription {
+    width: 50%;
+    border-bottom-left-radius: 8px;
+  }
+
+  .why {
+    width: 50%;
+    border-bottom-right-radius: 8px;
+  }
+}
+
+.outer-container {
+  max-width: 635px;
+  margin: 4.5rem 3rem;
+}
+.section {
+  color: #fff;
+  padding: 24px;
+}
+
+.community {
+  background-color: #fff;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.community__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cyan);
+  margin-bottom: 24px;
+}
+
+.community__sub-title {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--yellow);
+  margin-bottom: 16px;
+}
+
+.community__para {
+  font-size: 14px;
+  color: var(--gray-blue);
+  line-height: 26px;
+}
+
+.subscription {
+  background-color: #218f8d;
+}
+
+.subscription__title,
+.why__title {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.subscription__money {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 4px;
+}
+
+.subscription__money-dollar {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.subscription__money-text {
+  opacity: 0.5;
+}
+
+.subscription__desc {
+  margin-bottom: 26px;
+}
+
+.btn {
+  font-size: 16px;
+  width: 100%;
+  border: none;
+  background-color: var(--yellow);
+  color: #fff;
+  border-radius: 5px;
+  padding: 1em 0;
+}
+
+.why {
+  background-color: var(--cyan);
+}
+
+.why__para {
+  font-size: 14px;
+  width: 65%;
+  line-height: 20px;
+  letter-spacing: 0.175px;
+  opacity: 0.75;
 }
 
 /* 
@@ -23,6 +150,7 @@ html {
 Attribution
 ***********
 */
+
 .attribution {
   font-size: 11px;
   text-align: center;

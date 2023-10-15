@@ -11,7 +11,7 @@
 
 ## Overview
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-)
+This is a solution to the [single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc)
 
 ### The challenge
 
@@ -23,23 +23,21 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![](./screenshot.jpg)
+![](./solutions/single-price-grid-mobile.png)
 
 Desktop
-![](./screenshot.jpg)
+![](./solutions/single-price-grid-desktop.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- github: [gfunk77](https://github.com/gfunk77/Frontend-Mentor/tree/main/single-price-grid-component-main)
+- Live Site URL: [netlify](https://your-live-site-url.com)
 
 ### Built with
 
-- Semantic HTML5 markup
-- CSS custom properties
-- Flexbox
-- CSS Grid
-- Mobile-first workflow
+- html/css
+- flexbox
+- mobile-first workflow
 
 ## Author
 
