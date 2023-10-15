@@ -31,7 +31,7 @@ Desktop
 ### Links
 
 - github: [gfunk77](https://github.com/gfunk77/Frontend-Mentor/tree/main/single-price-grid-component-main)
-- Live Site URL: [netlify](https://your-live-site-url.com)
+- Live Site URL: [netlify](https://gfunk77-single-price-card-grid.netlify.app/)
 
 ### Built with
 
