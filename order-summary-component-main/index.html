@@ -10,18 +10,43 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and podcasts on any device
-    anywhere you like! Annual Plan $59.99/year Change Proceed to Payment Cancel Order
+    <div class="outer-container">
+      <section class="img">
+        <img src="./images/illustration-hero.svg" alt="Listening to tunes" />
+      </section>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by
-      <a
-        href="https://github.com/gfunk77/Frontend-Mentor/tree/main/order-summary-component-main"
-        target="_blank"
-        >gfunk77</a
-      >.
+      <section class="container card">
+        <h1 class="card__title">Order Summary</h1>
+        <p class="card__desc">
+          You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere
+          you like!
+        </p>
+        <div class="card__info">
+          <div class="card__info-music">
+            <img src="./images/icon-music.svg" alt="music notes" />
+          </div>
+          <div class="card__info-text">
+            <p>Annual Plan</p>
+            <p>$59.99/year</p>
+          </div>
+          <a href="#" class="card__info-link">Change</a>
+        </div>
+        <button class="btn">Proceed to Payment</button>
+        <a href="#">Cancel Order</a>
+      </section>
     </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by
+        <a
+          href="https://github.com/gfunk77/Frontend-Mentor/tree/main/order-summary-component-main"
+          target="_blank"
+          >gfunk77</a
+        >.
+      </div>
+    </footer>
   </body>
 </html>
