@@ -30,7 +30,7 @@ Desktop
 
 ### Links
 
-- Solution URL: [Github](https://your-solution-url.com)
+- Solution URL: [Github](https://github.com/gfunk77/Frontend-Mentor/tree/main/order-summary-component-main)
 - Live Site URL: [Netlify](https://your-live-site-url.com)
 
 ### Built with
