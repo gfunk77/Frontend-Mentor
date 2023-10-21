@@ -9,10 +9,11 @@
   --pale-blue: #e0e8ff;
   --bright-blue: hsl(245, 75%, 52%);
 
-  --very-pale-blue: hsl(225, 100%, 98%);
-  --desaturated-blue: hsl(224, 23%, 55%);
-  --dark-blue: hsl(223, 47%, 23%);
+  --very-pale-blue: #f7f9ff;
+  --desaturated-blue: #7280a7;
+  --dark-blue: #1f2f56;
   --radius: 20px;
+  --btn-active: #766cf1;
 }
 
 body {
@@ -36,27 +37,27 @@ h3 {
   border-top-right-radius: var(--radius);
   border-top-left-radius: var(--radius);
 }
+
 .outer-container {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background-color: var(--very-pale-blue);
-}
-
-.inner-container {
-  width: 85%;
-  max-width: 327px;
-  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
-  border-bottom-left-radius: var(--radius);
-  border-bottom-right-radius: var(--radius);
-}
-.container {
-  padding: 32px;
+  background: no-repeat url('./images/pattern-background-mobile.svg'), var(--pale-blue);
+  background-size: contain;
 }
 
 .card {
+  margin: 0 0.5rem;
+  max-width: 327px;
+  box-shadow: 0px 40px 40px -20px rgba(13, 48, 189, 0.15);
+
+  border-radius: var(--radius);
+  background-color: white;
+}
+.container {
   text-align: center;
+  padding: 32px;
 }
 
 .card__title {
@@ -110,11 +111,66 @@ h3 {
   margin-bottom: 24px;
 }
 
+.card__info-link:hover {
+  cursor: pointer;
+  color: var(--btn-active);
+  text-decoration: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: var(--btn-active);
+}
+
 .cancel-link {
   text-decoration: none;
   color: var(--desaturated-blue);
   font-size: 15px;
   font-weight: 900;
+}
+
+.cancel-link:hover {
+  cursor: pointer;
+  color: var(--dark-blue);
+}
+
+@media (min-width: 600px) {
+  .outer-container {
+    background: repeat-x url('./images/pattern-background-desktop.svg'), var(--pale-blue);
+  }
+  .card {
+    margin: 0;
+    max-width: 450px;
+  }
+  .container {
+    padding: 48px;
+  }
+
+  .card__title {
+    font-size: 28px;
+  }
+
+  .card__desc {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .card__info {
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+
+  .card__info-title,
+  .card__info-price {
+    font-size: 16px;
+  }
+  .card__info-link {
+    font-size: 14px;
+  }
+
+  .btn {
+    margin-bottom: 32px;
+  }
 }
 
 /* 
