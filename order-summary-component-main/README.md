@@ -23,15 +23,15 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![](./screenshot.jpg)
+![](./solutions/order-mobile.png)
 
 Desktop
-![](./screenshot.jpg)
+![](./solutions/order-desktop.png)
 
 ### Links
 
 - Solution URL: [Github](https://github.com/gfunk77/Frontend-Mentor/tree/main/order-summary-component-main)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://gfunk77-order-summary.netlify.app/)
 
 ### Built with
 
