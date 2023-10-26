@@ -31,7 +31,7 @@ Desktop
 ### Links
 
 - Live Site URL: [Site](https://gfunk77-3-column-preview-card.netlify.app)
-- github: [gfunk77](https://github.com/gfunk77)
+- github: [gfunk77](https://github.com/gfunk77/Frontend-Mentor/tree/main/3-column-preview-card)
 
 ### Built with
 

@@ -31,7 +31,7 @@ Desktop
 ### Links
 
 - Netlify: [Live Preview](https://fm-gfunk77-nft-preview-card.netlify.app/)
-- github: [gfunk77](https://github.com/gfunk77/Frontend-Mentor/tree/main/nft-preview-card-component-main)
+- github: [gfunk77](https://github.com/gfunk77/Frontend-Mentor/tree/main/nft-preview-card)
 
 ### Built with
 

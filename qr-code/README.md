@@ -23,7 +23,7 @@ Mobile
 ### Links
 
 - Live Preview: [Site](https://gfunk77-qr-code-component.netlify.app)
-- Gitbhub: [gfunk77](https://github.com/gfunk77/Frontend-Mentor/tree/main/qr-code-component-main)
+- Gitbhub: [gfunk77](https://github.com/gfunk77/Frontend-Mentor/tree/main/qr-code)
 
 ### Built with
 
