@@ -23,15 +23,15 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![](./screenshot.jpg)
+![](./solutions/mobile.png)
 
 Desktop
-![](./screenshot.jpg)
+![](./solutions/desktop.png)
 
 ### Links
 
 - Solution URL: [Github](https://github.com/gfunk77/Frontend-Mentor/tree/main/product-preview-card)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](gfunk77-product-preview-card.netlify.app)
 
 ### Built with
 
