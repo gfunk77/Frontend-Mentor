@@ -99,19 +99,16 @@ img {
   font-weight: 700;
   border-radius: 8px;
   transition: all 300ms linear;
+  padding: 1.125em 0;
+  display: flex;
+  justify-content: center;
+  gap: 19px;
 }
 
 .btn:hover,
 .btn:focus {
   cursor: pointer;
   background-color: var(--hover);
-}
-
-.btn-content {
-  margin: 1.125em auto;
-  display: flex;
-  justify-content: center;
-  gap: 19px;
 }
 
 @media (min-width: 625px) {
