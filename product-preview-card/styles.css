@@ -119,6 +119,7 @@ img {
   }
   .card {
     max-width: 600px;
+    height: 450px;
     margin: 0;
     display: flex;
   }
@@ -133,20 +134,7 @@ img {
     border-bottom-left-radius: 10px;
   }
   .info-container {
-    width: 82%;
-  }
-
-  .subtitle {
-    margin-bottom: 20px;
-  }
-  .title {
-    margin-bottom: 24px;
-  }
-  .desc {
-    margin-bottom: 29px;
-  }
-  .price-container {
-    margin-bottom: 30px;
+    width: 50%;
   }
 }
 /* 
