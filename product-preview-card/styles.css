@@ -58,6 +58,7 @@ img {
 
 .title {
   font-size: 2rem;
+  line-height: 32px;
   font-family: var(--font-family-fraunces);
   color: var(--very-dark-blue);
   margin-bottom: 16px;
