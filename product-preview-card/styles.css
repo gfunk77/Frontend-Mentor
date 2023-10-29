@@ -137,6 +137,18 @@ img {
   .info-container {
     width: 50%;
   }
+
+  .subtitle {
+    margin-bottom: 20px;
+  }
+
+  .title {
+    margin-bottom: 24px;
+  }
+
+  .price-container {
+    margin-bottom: 30px;
+  }
 }
 /* 
 Attribution
