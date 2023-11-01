@@ -31,7 +31,7 @@ Desktop
 ### Links
 
 - Solution URL: [Github](https://github.com/gfunk77/Frontend-Mentor/tree/main/huddle-landing-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://gfunk77-huddle-landing-page.netlify.app/)
 
 ### Built with
 
