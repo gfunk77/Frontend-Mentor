@@ -11,11 +11,16 @@
   --poppins: 'Poppins', sans-serif;
   --violet: hsl(257, 40%, 49%);
   --soft-magenta: hsl(300, 69%, 71%);
+  --transition: all 400ms linear;
 }
 
 img {
   max-width: 100%;
   display: block;
+}
+
+.outer-container {
+  max-width: 1200px;
 }
 
 .main {
@@ -53,7 +58,7 @@ img {
 .desc {
   font-family: var(--open-sans);
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
@@ -68,8 +73,8 @@ img {
   width: 68%;
   box-shadow: 1px 3px 5px 0px rgba(0, 0, 0, 0.27);
   margin-bottom: 4rem;
+  transition: var(--transition);
 }
-
 .icons {
   display: flex;
   justify-content: center;
@@ -78,7 +83,75 @@ img {
 
 .icon {
   font-size: 1.75rem;
-  color: white;
+  color: #fff;
+  transition: var(--transition);
+}
+
+.btn:hover,
+.btn:focus {
+  cursor: pointer;
+  background-color: var(--soft-magenta);
+  color: #fff;
+}
+
+.icon:hover,
+.icon:focus {
+  color: var(--soft-magenta);
+}
+
+@media (min-width: 900px) {
+  .main {
+    background: var(--violet) url(./images/bg-desktop.svg) center/cover no-repeat;
+    padding: 60px;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .container {
+    display: flex;
+    gap: 40px;
+  }
+
+  .info {
+    width: 40%;
+    margin: auto;
+  }
+
+  .logo {
+    margin-bottom: 104px;
+  }
+
+  .logo-img {
+    width: 20%;
+  }
+
+  .illustration {
+    margin: 0;
+  }
+
+  .info {
+    text-align: left;
+    margin: auto;
+  }
+  .title {
+    font-size: 2.5rem;
+    line-height: 3.75rem;
+    margin-bottom: 1.5rem;
+  }
+  .desc {
+    font-size: 18px;
+    line-height: 27px;
+  }
+
+  .btn {
+    width: 32%;
+  }
+
+  .icons {
+    justify-content: flex-end;
+    margin-top: 1rem;
+  }
 }
 
 .attribution {
@@ -86,5 +159,5 @@ img {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--violet);
 }
