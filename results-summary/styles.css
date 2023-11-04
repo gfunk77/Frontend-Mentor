@@ -24,16 +24,35 @@
   --persian-blue: hsla(241, 72%, 46%, 0);
   /* Neutral */
   --white: #ffffff;
-  --pale-blue: hsl(221, 100%, 96%);
-  --lavender: hsl(241, 100%, 89%);
-  --dark-grey-blue: hsl(224, 30%, 27%);
+  --pale-blue: #ebf1ff;
+  --lavender: #c8c7ff;
+  --dark-grey-blue: #303b5a;
 }
 
 body {
   font-family: var(--family);
   font-size: 18px;
   min-height: 100vh;
-  background-color: dodgerblue;
+  background-color: var(--pale-blue);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.main {
+  min-height: 100vh;
 }
 
 .attribution {
