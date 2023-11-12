@@ -67,7 +67,7 @@ p {
   display: flex;
 }
 
-.container {
+#container {
   padding: 40px;
   width: 50%;
 }
@@ -218,7 +218,7 @@ p {
     flex-direction: column;
     border-radius: 0;
   }
-  .container {
+  #container {
     padding: 30px;
     width: 100%;
   }
