@@ -31,7 +31,7 @@ Desktop
 ### Links
 
 - Solution URL: [Github](https://github.com/gfunk77/Frontend-Mentor/tree/main/results-summary)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Live Site URL: [Netlify](https://gfunk77-results-summary.netlify.app/)
 
 ### Built with
 
