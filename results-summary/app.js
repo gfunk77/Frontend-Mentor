@@ -103,10 +103,36 @@ function generateResults(data) {
   });
 }
 
+function renderAttribution() {
+  const attr = createEl('div', { class: 'attribution' });
+  const attrFirstText = document.createTextNode('Challenge by');
+  const attrSecondText = document.createTextNode('. Coded by');
+
+  const mentorLink = createEl('a', {
+    href: 'https://www.frontendmentor.io?ref=challenge',
+    target: '_blank',
+  });
+  mentorLink.textContent = 'Frontend Mentor';
+
+  const gitHubLink = createEl('a', {
+    href: 'https://github.com/gfunk77/Frontend-Mentor/tree/main/results-summary',
+  });
+  gitHubLink.textContent = 'gfunk77';
+
+  attr.append(mentorLink, gitHubLink);
+
+  mentorLink.parentNode.insertBefore(attrFirstText, mentorLink);
+  gitHubLink.parentNode.insertBefore(attrSecondText, gitHubLink);
+
+  const script = document.querySelector('script');
+  script.insertAdjacentElement('beforebegin', attr);
+}
+
 const render = (data) => {
   generateScore(data);
   createRightContainer();
   generateResults(data);
+  renderAttribution();
 };
 
 document.addEventListener('DOMContentLoaded', () => {
