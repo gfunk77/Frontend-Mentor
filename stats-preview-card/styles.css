@@ -26,9 +26,10 @@ body {
   font-size: 15px;
 }
 
-img {
+.img {
   max-width: 100%;
   display: block;
+  border-radius: 8px 8px 0 0;
 }
 
 .main {
@@ -49,6 +50,7 @@ img {
   max-width: 1110px;
   display: flex;
   flex-direction: column;
+  background-color: var(--desaturated-blue);
 }
 
 .top-right {
@@ -112,16 +114,43 @@ img {
 @media (min-width: 700px) {
   .card {
     flex-direction: row-reverse;
+    justify-content: stretch;
+  }
+
+  .bottom-left {
+    padding: 72px 72px 52px;
+  }
+
+  .bottom-left-container {
+    max-width: 403px;
+  }
+
+  .info {
+    text-align: left;
+  }
+
+  .heading {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 25px;
+  }
+
+  .text {
+    font-size: 15px;
+    width: 90%;
   }
 
   .img {
     height: 100%;
     object-fit: cover;
+    border-radius: 0 8px 8px 0;
   }
 
   .stats {
     display: flex;
     justify-content: space-between;
+    gap: 16px;
+    width: 90%;
   }
 }
 
@@ -130,5 +159,5 @@ img {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--soft-violet);
 }
