@@ -30,8 +30,8 @@ Desktop
 
 ### Links
 
-- Solution URL: [Github](https://github.com/gfunk77/Frontend-Mentor/)
-- Live Site URL: [Netlify]($$$)
+- Solution URL: [Github](https://github.com/gfunk77/Frontend-Mentor/tree/main/profile-card)
+- Live Site URL: [Netlify](https://gfunk77-profile-card.netlify.app)
 
 ### Built with
 

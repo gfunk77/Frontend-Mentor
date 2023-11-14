@@ -31,7 +31,7 @@ Desktop
 ### Links
 
 - Solution URL: [Github](https://github.com/gfunk77/Frontend-Mentor/tree/main/stats-preview-card)
-- Live Site URL: [Netlify](gfunk77-stats-preview-card.netlify.app)
+- Live Site URL: [Netlify](https://gfunk77-stats-preview-card.netlify.app)
 
 ### Built with
 
