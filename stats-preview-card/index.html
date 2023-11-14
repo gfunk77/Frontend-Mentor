@@ -8,9 +8,44 @@
     <title>Frontend Mentor | Stats preview card component</title>
   </head>
   <body>
-    Get insights that help your business grow. Discover the benefits of data analytics and make
-    better decisions regarding revenue, customer experience, and overall efficiency. 10k+ companies
-    314 templates 12m+ queries
+    <main class="main">
+      <div class="card">
+        <section class="container top-right">
+          <picture>
+            <source media="(min-width:700px)" srcset="./images/image-header-desktop.jpg" />
+            <img src="./images/image-header-mobile.jpg" alt="" class="img" />
+          </picture>
+          <div class="overlay"></div>
+        </section>
+        <section class="container bottom-left">
+          <div class="bottom-left-container">
+            <div class="info">
+              <h1 class="heading">
+                Get <span class="insights">insights</span> that help your business grow.
+              </h1>
+              <p class="text">
+                Discover the benefits of data analytics and make better decisions regarding revenue,
+                customer experience, and overall efficiency.
+              </p>
+            </div>
+            <div class="stats">
+              <div class="stat">
+                <span class="stat__amount">10k+</span>
+                <span class="stat__category">companies</span>
+              </div>
+              <div class="stat">
+                <span class="stat__amount">314</span>
+                <span class="stat__category">templates</span>
+              </div>
+              <div class="stat">
+                <span class="stat__amount">12m+</span>
+                <span class="stat__category">queries</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
 
     <div class="attribution">
       Challenge by
