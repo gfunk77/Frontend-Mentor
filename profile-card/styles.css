@@ -12,11 +12,13 @@
   --desaturated-blue: hsl(229, 23%, 23%);
   --grayish-blue: hsl(227, 10%, 46%);
   --dark-gray: hsl(0, 0%, 59%);
+  --line: #e9eaed;
 }
 
 body {
   font-family: var(--font-family);
   font-size: 18px;
+  background-color: var(--dark-cyan);
 }
 
 img {
@@ -30,12 +32,17 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background: url('./images/bg-pattern-top.svg'), url('./images/bg-pattern-bottom.svg');
+  background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+  background-repeat: no-repeat, no-repeat;
 }
 .card {
   width: 90%;
   max-width: 350px;
   border-radius: 15px;
   box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.5);
+  background-color: #fff;
 }
 
 .bg-img {
@@ -91,6 +98,11 @@ img {
   font-size: 10px;
   letter-spacing: 1.5px;
   color: var(--dark-gray);
+}
+
+.line {
+  height: 1px;
+  background-color: var(--line);
 }
 
 /* ******* */
