@@ -23,10 +23,10 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![]($$$)
+![](./solutions/mobile.png)
 
 Desktop
-![]($$$)
+![](./solutions/desktop.png)
 
 ### Links
 
