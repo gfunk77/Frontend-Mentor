@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
 
-*,
-::after,
-::before {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -35,22 +33,24 @@ img {
 }
 
 .main {
-  /* border: 2px solid red; */
   background-color: var(--light-gray);
+  display: grid;
+  place-items: center;
   min-height: 100vh;
 }
 
 .container {
-  /* border: 2px solid yellow; */
+  display: grid;
+  place-items: center;
+  gap: 76px;
   width: 90%;
-  margin: 0 auto;
-  padding: 85px 0;
+  margin: 85px 0;
 }
 
 .heading {
+  max-width: 540px;
   text-align: center;
-  width: 95%;
-  margin: 0 auto 76px;
+  margin: auto;
 }
 
 .sub-title,
@@ -72,26 +72,19 @@ img {
   opacity: 0.5;
 }
 
+.outer-card-container,
+.inner-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .card {
-  /* border: 2px solid green; */
   padding: 28px;
   border-radius: 8px;
   background: #fff;
   box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
-  margin-bottom: 24px;
-}
-
-.supervisor {
-  border-top: 3.5px solid var(--cyan);
-}
-.team {
-  border-top: 3.5px solid var(--red);
-}
-.karma {
-  border-top: 3.5px solid var(--orange);
-}
-.calculator {
-  border-top: 3.5px solid var(--blue);
+  max-width: 350px;
 }
 
 .card-title {
@@ -110,6 +103,49 @@ img {
 .img {
   width: 57px;
   height: 57px;
+}
+
+.supervisor {
+  border-top: 3.5px solid var(--cyan);
+}
+.team {
+  border-top: 3.5px solid var(--red);
+}
+.karma {
+  border-top: 3.5px solid var(--orange);
+}
+.calculator {
+  border-top: 3.5px solid var(--blue);
+}
+
+@media (min-width: 1200px) {
+  .container {
+    margin: unset;
+    gap: 64px;
+    width: 95%;
+  }
+
+  .card {
+    padding: 32px;
+    min-width: 350px;
+  }
+
+  .sub-title,
+  .title {
+    font-size: 36px;
+    letter-spacing: 0.25px;
+  }
+
+  .outer-card-container {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .img {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .attribution {
