@@ -13,6 +13,8 @@
 
 This is a solution to the [Results Summary challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV)
 
+Initially I built this project with normal html markup. As I was adding in the JavaScript, I was just having fun removing more and more of the html. This final result does not represent best practices in JS. That wasn't my goal here.
+
 ### The challenge
 
 Users should be able to:
@@ -35,7 +37,7 @@ Desktop
 
 ### Built with
 
-- css/html
+- css/html/js
 
 ## Author
 
