@@ -13,6 +13,8 @@
 
 This is a solution to the [Social Proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA)
 
+In this challenge my workflow was desktop first, which is not a typical practice for me.
+
 ### The challenge
 
 Users should be able to:
