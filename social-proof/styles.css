@@ -40,6 +40,11 @@ img {
   background-position: top left, bottom right;
 }
 
+.container {
+  max-width: 1095px;
+  margin: 0 auto;
+}
+
 .top {
   display: flex;
   margin-bottom: 4.75rem;
@@ -162,7 +167,75 @@ img {
   letter-spacing: -0.304px;
 }
 
-/* ***** */
+/* Media */
+@media (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1250px) and (min-width: 900px) {
+  .container {
+    width: 70%;
+  }
+}
+@media (max-width: 1250px) {
+  .main {
+    padding: 82px 0;
+
+    background-image: url('./images/bg-pattern-top-mobile.svg'),
+      url('./images/bg-pattern-mobile-desktop.svg');
+  }
+
+  .top {
+    margin-bottom: 49px;
+  }
+
+  .top,
+  .bottom {
+    flex-direction: column;
+  }
+
+  .bottom {
+    gap: 16px;
+  }
+
+  .top__title {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    width: unset;
+    text-align: center;
+  }
+
+  .top__title-main {
+    font-size: 40px;
+    line-height: 32px;
+    letter-spacing: -1.429px;
+  }
+
+  .top__stars {
+    padding: unset;
+    width: unset;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .top__stars-box {
+    margin: unset;
+    min-width: unset;
+    width: 100%;
+
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .card-2,
+  .card-3 {
+    margin-top: unset;
+  }
+}
+
+/* attribution */
 .attribution {
   font-size: 11px;
   text-align: center;
