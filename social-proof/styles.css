@@ -32,7 +32,7 @@ img {
 
 .main {
   min-height: 100vh;
-  padding: 11em;
+  padding: 118px 165px;
 
   background-image: url('./images/bg-pattern-top-desktop.svg'),
     url('./images/bg-pattern-bottom-desktop.svg');
@@ -40,6 +40,129 @@ img {
   background-position: top left, bottom right;
 }
 
+.top {
+  display: flex;
+  margin-bottom: 4.75rem;
+}
+/* Top Left Side */
+.top__title {
+  width: 40%;
+}
+
+.top__title-main {
+  font-size: 56px;
+  line-height: 48px;
+  color: var(--dark-magenta);
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+
+.top__title-text {
+  font-size: 19px;
+  font-weight: var(--medium);
+  line-height: 25px;
+  letter-spacing: -0.633px;
+  color: var(--gray-magenta);
+}
+
+/* Top Right Side */
+.top__stars {
+  padding: 16px 0;
+  width: 60%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.top__stars-box {
+  background-color: var(--light-magenta);
+  border-radius: 8px;
+  padding: 20px 32px;
+  margin: 8px 0;
+  min-width: 445px;
+
+  display: flex;
+  align-items: center;
+  gap: 32.5px;
+}
+
+.star-box-1 {
+  margin-right: 96px;
+}
+
+.star-box-2 {
+  margin-right: 48px;
+}
+
+.star-container {
+  display: flex;
+  gap: 0.5rem;
+}
+.top__stars-text {
+  font-size: 17px;
+  font-weight: var(--bold);
+  color: var(--dark-magenta);
+}
+
+/* Bottom */
+.bottom {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.bottom__card {
+  border-radius: 8px;
+  background-color: var(--dark-magenta);
+  padding: 40px 32px 35px;
+  color: var(--white);
+}
+
+.card-2 {
+  margin-top: 16px;
+}
+
+.card-3 {
+  margin-top: 32px;
+}
+
+.bottom__card-name-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.avatar-container {
+  width: 40px;
+  height: 40px;
+}
+
+.avatar-container img {
+  border-radius: 50%;
+}
+
+.heading-name,
+.heading-verified,
+.bottom__card-quote--text {
+  font-size: 17px;
+}
+
+.heading-verified {
+  font-weight: var(--regular);
+  color: var(--pink);
+}
+
+.bottom__card-quote--text {
+  font-weight: var(--medium);
+  line-height: 22px;
+  letter-spacing: -0.304px;
+}
+
+/* ***** */
 .attribution {
   font-size: 11px;
   text-align: center;
