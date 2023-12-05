@@ -30,6 +30,16 @@ img {
   max-width: 100%;
 }
 
+.main {
+  min-height: 100vh;
+  padding: 11em;
+
+  background-image: url('./images/bg-pattern-top-desktop.svg'),
+    url('./images/bg-pattern-bottom-desktop.svg');
+  background-repeat: no-repeat no-repeat;
+  background-position: top left, bottom right;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
