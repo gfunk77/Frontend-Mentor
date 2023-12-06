@@ -184,7 +184,7 @@ img {
     padding: 82px 0;
 
     background-image: url('./images/bg-pattern-top-mobile.svg'),
-      url('./images/bg-pattern-mobile-desktop.svg');
+      url('./images/bg-pattern-bottom-mobile.svg');
   }
 
   .top {
