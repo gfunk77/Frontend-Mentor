@@ -71,7 +71,7 @@ img {
 }
 
 /* Top Right Side */
-.top__stars {
+.stars {
   padding: 16px 0;
   width: 60%;
 
@@ -81,7 +81,7 @@ img {
   justify-content: center;
 }
 
-.top__stars-box {
+.star {
   background-color: var(--light-magenta);
   border-radius: 8px;
   padding: 20px 32px;
@@ -93,11 +93,11 @@ img {
   gap: 32.5px;
 }
 
-.star-box-1 {
+.star-1 {
   margin-right: 96px;
 }
 
-.star-box-2 {
+.star-2 {
   margin-right: 48px;
 }
 
@@ -105,7 +105,7 @@ img {
   display: flex;
   gap: 0.5rem;
 }
-.top__stars-text {
+.star-text {
   font-size: 17px;
   font-weight: var(--bold);
   color: var(--dark-magenta);
@@ -213,14 +213,14 @@ img {
     letter-spacing: -1.429px;
   }
 
-  .top__stars {
+  .stars {
     padding: unset;
     width: unset;
     align-items: center;
     gap: 1rem;
   }
 
-  .top__stars-box {
+  .star {
     margin: unset;
     min-width: unset;
     width: 100%;
