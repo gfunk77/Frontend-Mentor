@@ -14,8 +14,13 @@ function response(resp) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-  data.then(response).then(createCards);
+  data.then(response).then(render);
 });
+
+function render(data) {
+  createCards(data);
+  stars();
+}
 
 function createCards(data) {
   const bottomContainer = document.querySelector('.bottom');
@@ -39,12 +44,10 @@ function createCards(data) {
           </div>
           `;
   });
-  stars();
 }
 
 function stars() {
   const starContainers = document.querySelectorAll('.star-container');
-
   starContainers.forEach((starContainer) => {
     for (let i = 0; i < 5; i++) {
       starContainer.innerHTML += `
