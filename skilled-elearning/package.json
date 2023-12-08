@@ -1,0 +1,15 @@
+{
+  "name": "skilled-elearning",
+  "version": "1.0.0",
+  "description": "## Table of contents",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch scss/main.scss:css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
