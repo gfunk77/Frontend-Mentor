@@ -1,4 +1,5 @@
 @use 'typography';
+@use 'colors';
 
 *,
 ::after,
@@ -15,4 +16,21 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+@mixin button($radius, $padding) {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: typography.$font-weight-700;
+  line-height: typography.$line-height-28;
+  border-radius: $radius;
+  border: none;
+  color: colors.$white;
+  padding: $padding;
+  cursor: pointer;
+}
+
+@mixin flex-space() {
+  display: flex;
+  justify-content: space-between;
 }

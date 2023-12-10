@@ -16,4 +16,52 @@ img {
   max-width: 100%;
 }
 
+.footer {
+  background-color: #13183f;
+  padding: 2.25rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.footer .btn {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 28px;
+  border-radius: 28px;
+  border: none;
+  color: #fff;
+  padding: 0 1.5em;
+  cursor: pointer;
+  background: linear-gradient(180deg, #4851ff 0%, #f02aa6 99.92%);
+}
+.footer .btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
+}
+.footer .logo-light {
+  width: 89px;
+  height: 35px;
+}
+.footer .img-logo-light {
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (min-width: 600px) {
+  .footer {
+    padding: 2.25rem 2.5rem;
+  }
+}
+@media (min-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+  .footer {
+    padding: 2.25rem 10.3rem;
+  }
+  .footer .logo-light {
+    width: 114px;
+    height: 45px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */

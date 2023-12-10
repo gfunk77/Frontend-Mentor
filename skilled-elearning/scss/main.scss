@@ -1,3 +1,57 @@
 @use 'base';
 @use 'colors';
 @use 'typography';
+
+// Footer
+
+.footer {
+  background-color: colors.$dark;
+  padding: 2.25rem 1rem;
+  @include base.flex-space;
+
+  & .btn {
+    @include base.button(28px, 0 1.5em);
+    @include colors.gradient(colors.$direction-180, colors.$gradient-2);
+  }
+
+  .btn:hover {
+    @include colors.gradient-hover(
+      colors.$direction-0,
+      colors.$gradient-hover,
+      colors.$direction-180,
+      colors.$gradient-2-hover
+    );
+  }
+
+  .logo-light {
+    width: 89px;
+    height: 35px;
+  }
+
+  .img-logo-light {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+// Media
+
+@media (min-width: 600px) {
+  .footer {
+    padding: 2.25rem 2.5rem;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    font-size: 18px;
+  }
+  .footer {
+    padding: 2.25rem 10.3rem;
+
+    & .logo-light {
+      width: 114px;
+      height: 45px;
+    }
+  }
+}
