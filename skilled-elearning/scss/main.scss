@@ -2,6 +2,12 @@
 @use 'colors';
 @use 'typography';
 
+// Main
+
+.main {
+  min-height: 100vh;
+}
+
 // Footer
 
 .footer {

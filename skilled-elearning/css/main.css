@@ -16,6 +16,10 @@ img {
   max-width: 100%;
 }
 
+.main {
+  min-height: 100vh;
+}
+
 .footer {
   background-color: #13183f;
   padding: 2.25rem 1rem;
