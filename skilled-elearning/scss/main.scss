@@ -6,8 +6,64 @@
 
 .main {
   min-height: 100vh;
+  @include colors.gradient(colors.$direction-180, colors.$gradient-main);
 }
 
+// Cards
+
+.cards {
+  margin: 4.125rem auto;
+  width: 95%;
+  display: grid;
+  justify-items: center;
+  row-gap: 40px;
+}
+
+.first-card {
+  @include colors.gradient(colors.$direction-180, colors.$gradient-1);
+  color: colors.$white;
+  padding: 24px 28px 32px;
+  border-radius: 10px;
+}
+
+.card {
+  position: relative;
+  padding: 28px 32px;
+  background-color: colors.$white;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+}
+
+.card-img {
+  position: absolute;
+  top: -28px;
+  left: 28px;
+}
+
+.card-title {
+  color: colors.$dark;
+  font-size: 20px;
+  font-weight: 800;
+  margin-top: 1.5rem;
+}
+
+.card-text {
+  line-height: typography.$line-height-26;
+  color: colors.$gray;
+  margin: 1rem 0 1.5rem;
+}
+
+.card-action {
+  font-size: typography.$font-size-18;
+  line-height: typography.$line-height-28;
+  color: colors.$dark-pink;
+  transition: all 200ms linear;
+}
+
+.card-action:hover {
+  cursor: pointer;
+  color: colors.$light-pink;
+}
 // Footer
 
 .footer {
@@ -21,12 +77,7 @@
   }
 
   .btn:hover {
-    @include colors.gradient-hover(
-      colors.$direction-0,
-      colors.$gradient-hover,
-      colors.$direction-180,
-      colors.$gradient-2-hover
-    );
+    @include colors.gradient-hover-2();
   }
 
   .logo-light {
@@ -43,15 +94,61 @@
 // Media
 
 @media (min-width: 600px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    max-width: 710px;
+  }
+
+  .card,
+  .first-card {
+    max-width: 350px;
+  }
+
+  .first-card {
+    padding: 56px 32px;
+  }
+
   .footer {
     padding: 2.25rem 2.5rem;
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1160px) {
   body {
     font-size: 18px;
   }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    max-width: 1110px;
+  }
+
+  .card,
+  .first-card {
+    border-radius: 15px;
+  }
+
+  .first-card-content {
+    font-size: typography.$font-size-32;
+  }
+
+  .card-title {
+    font-size: typography.$font-size-24;
+    margin: 32px 0 0;
+  }
+
+  .card-text {
+    margin: 1.5rem 0;
+    line-height: 28px;
+  }
+
+  .card:nth-child(3) .card-text,
+  .card:nth-child(4) .card-text {
+    margin: 1.5rem 0 52px;
+  }
+
   .footer {
     padding: 2.25rem 10.3rem;
 
