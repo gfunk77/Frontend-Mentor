@@ -21,9 +21,67 @@ img {
   background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
 }
 
+.heading {
+  padding: 2.25rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.heading .btn {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 28px;
+  border-radius: 28px;
+  border: none;
+  color: #fff;
+  padding: 0em 1.5em;
+  cursor: pointer;
+  background-color: #13183f;
+  transition: all 200ms linear;
+}
+.heading .btn:hover {
+  cursor: pointer;
+  background: #666ca3;
+}
+.heading .logo-light {
+  width: 89px;
+  height: 35px;
+}
+.heading .img-logo-light {
+  height: 100%;
+  object-fit: contain;
+}
+
+.hero {
+  width: 90%;
+  margin: 0 auto;
+}
+.hero .hero-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #13183f;
+}
+.hero .hero-text {
+  line-height: 26px;
+  color: #83869a;
+  margin: 1.5rem 0 1.5rem;
+}
+.hero .btn {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 26px;
+  border-radius: 31.5px;
+  border: none;
+  color: #fff;
+  padding: 0.75em 1.75em;
+  cursor: pointer;
+  background: linear-gradient(180deg, #f02aa6 0.04%, #ff6f48 100%);
+}
+
 .cards {
-  margin: 4.125rem auto;
-  width: 95%;
+  margin: 0 auto 4.125rem;
+  width: 90%;
   display: grid;
   justify-items: center;
   row-gap: 40px;

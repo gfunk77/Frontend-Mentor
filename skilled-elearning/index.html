@@ -8,14 +8,34 @@
     <title>Frontend Mentor | Skilled e-learning landing page</title>
   </head>
   <body>
-    <!-- Content -->
-    <div>
-      Get Started Maximize skill, minimize budget Our modern courses across a range of in-demand
-      skills will give you the knowledge you need to live the life you want. Get Started Animation
-      Design Get Started Photography Get Started Crypto Get Started Business Get Started
-    </div>
-    <!-- Start Here -->
     <div class="main">
+      <div class="heading">
+        <div class="logo-light">
+          <img class="img-logo-light" src="./assets/logo-dark.svg" alt="logo dark" />
+        </div>
+        <button class="btn">Get Started</button>
+      </div>
+      <div class="hero">
+        <div class="hero-info">
+          <h1 class="hero-title">Maximize skill, minimize budget</h1>
+          <p class="hero-text">
+            Our modern courses across a range of in-demand skills will give you the knowledge you
+            need to live the life you want.
+          </p>
+          <button class="btn">Get Started</button>
+        </div>
+        <div class="hero-img-container">
+          <picture>
+            <source media="(min-width:1160px)" srcset="./assets/image-hero-desktop@2x.webp" />
+            <source media="(min-width:600px)" srcset="./assets/image-hero-tablet@2x.webp" />
+            <img
+              class="hero-img"
+              src="./assets/image-hero-mobile@2x.png"
+              alt="mobile coffee"
+              style="width: auto" />
+          </picture>
+        </div>
+      </div>
       <div class="cards">
         <div class="first-card">
           <h2 class="first-card-content">Check out our most popular courses!</h2>

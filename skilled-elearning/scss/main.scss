@@ -9,11 +9,58 @@
   @include colors.gradient(colors.$direction-180, colors.$gradient-main);
 }
 
+.heading {
+  padding: 2.25rem 1rem;
+  @include base.flex-space;
+
+  & .btn {
+    @include base.button(28px, 0em 1.5em, typography.$line-height-28);
+    background-color: colors.$dark;
+    transition: all 200ms linear;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    background: colors.$lavender;
+  }
+
+  .logo-light {
+    width: 89px;
+    height: 35px;
+  }
+
+  .img-logo-light {
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.hero {
+  width: 90%;
+  margin: 0 auto;
+
+  & .hero-title {
+    font-size: typography.$font-size-40;
+    font-weight: typography.$font-weight-800;
+    color: colors.$dark;
+  }
+
+  & .hero-text {
+    line-height: typography.$line-height-26;
+    color: colors.$gray;
+    margin: 1.5rem 0 1.5rem;
+  }
+  & .btn {
+    @include base.button(31.5px, 0.75em 1.75em, typography.$line-height-26);
+    @include colors.gradient(colors.$direction-180, colors.$gradient-1);
+  }
+}
+
 // Cards
 
 .cards {
-  margin: 4.125rem auto;
-  width: 95%;
+  margin: 0 auto 4.125rem;
+  width: 90%;
   display: grid;
   justify-items: center;
   row-gap: 40px;
@@ -72,7 +119,7 @@
   @include base.flex-space;
 
   & .btn {
-    @include base.button(28px, 0 1.5em);
+    @include base.button(28px, 0 1.5em, typography.$line-height-28);
     @include colors.gradient(colors.$direction-180, colors.$gradient-2);
   }
 
@@ -141,7 +188,7 @@
 
   .card-text {
     margin: 1.5rem 0;
-    line-height: 28px;
+    line-height: typography.$line-height-28;
   }
 
   .card:nth-child(3) .card-text,

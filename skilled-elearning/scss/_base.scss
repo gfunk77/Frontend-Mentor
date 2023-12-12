@@ -18,11 +18,11 @@ img {
   max-width: 100%;
 }
 
-@mixin button($radius, $padding) {
+@mixin button($radius, $padding, $line-height) {
   font-family: inherit;
   font-size: inherit;
   font-weight: typography.$font-weight-700;
-  line-height: typography.$line-height-28;
+  line-height: $line-height;
   border-radius: $radius;
   border: none;
   color: colors.$white;
