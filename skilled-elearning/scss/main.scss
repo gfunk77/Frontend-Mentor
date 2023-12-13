@@ -9,31 +9,53 @@
   @include colors.gradient(colors.$direction-180, colors.$gradient-main);
 }
 
+// Heading
+
 .heading {
   padding: 2.25rem 1rem;
   @include base.flex-space;
+}
+.heading .btn {
+  @include base.button(28px, 0em 1.5em, typography.$line-height-28);
+  background-color: colors.$dark;
+  transition: all 200ms linear;
 
-  & .btn {
-    @include base.button(28px, 0em 1.5em, typography.$line-height-28);
-    background-color: colors.$dark;
-    transition: all 200ms linear;
-  }
-
-  .btn:hover {
+  &:hover {
     cursor: pointer;
     background: colors.$lavender;
   }
+}
 
-  .logo-light {
-    width: 89px;
-    height: 35px;
-  }
+// Heading/Footer Svg (Skilled)
 
-  .img-logo-light {
-    height: 100%;
-    object-fit: contain;
+.logo-light {
+  width: 89px;
+  height: 35px;
+}
+
+.img-logo-light {
+  height: 100%;
+  object-fit: contain;
+}
+
+// Footer
+
+.footer {
+  background-color: colors.$dark;
+  padding: 2.25rem 1rem;
+  @include base.flex-space;
+}
+
+.footer .btn {
+  @include base.button(28px, 0 1.5em, typography.$line-height-28);
+  @include colors.gradient(colors.$direction-180, colors.$gradient-2);
+
+  &:hover {
+    @include colors.gradient-hover-2();
   }
 }
+
+// Hero
 
 .hero {
   width: 90%;
@@ -105,40 +127,14 @@
   line-height: typography.$line-height-28;
   color: colors.$dark-pink;
   transition: all 200ms linear;
-}
 
-.card-action:hover {
-  cursor: pointer;
-  color: colors.$light-pink;
-}
-// Footer
-
-.footer {
-  background-color: colors.$dark;
-  padding: 2.25rem 1rem;
-  @include base.flex-space;
-
-  & .btn {
-    @include base.button(28px, 0 1.5em, typography.$line-height-28);
-    @include colors.gradient(colors.$direction-180, colors.$gradient-2);
-  }
-
-  .btn:hover {
-    @include colors.gradient-hover-2();
-  }
-
-  .logo-light {
-    width: 89px;
-    height: 35px;
-  }
-
-  .img-logo-light {
-    height: 100%;
-    object-fit: contain;
+  &:hover {
+    cursor: pointer;
+    color: colors.$light-pink;
   }
 }
 
-// Media
+// Media - Tablet
 
 @media (min-width: 600px) {
   .cards {
@@ -156,10 +152,13 @@
     padding: 56px 32px;
   }
 
-  .footer {
+  .footer,
+  .heading {
     padding: 2.25rem 2.5rem;
   }
 }
+
+// Media - Full Screen
 
 @media (min-width: 1160px) {
   body {
@@ -196,12 +195,12 @@
     margin: 1.5rem 0 52px;
   }
 
-  .footer {
+  .footer,
+  .heading {
     padding: 2.25rem 10.3rem;
-
-    & .logo-light {
-      width: 114px;
-      height: 45px;
-    }
+  }
+  .logo-light {
+    width: 114px;
+    height: 45px;
   }
 }
