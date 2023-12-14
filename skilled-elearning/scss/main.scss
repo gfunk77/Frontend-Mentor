@@ -3,7 +3,6 @@
 @use 'typography';
 
 // Main
-
 .main {
   min-height: 100vh;
   @include colors.gradient(colors.$direction-180, colors.$gradient-main);
@@ -12,28 +11,27 @@
 .container {
   width: 92%;
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1200px;
 }
 
 // Heading
-
 .heading {
   padding: 2.25rem 1rem;
   @include base.flex-space;
-}
-.heading .btn {
-  @include base.button(28px, 0em 1.5em, typography.$line-height-28);
-  background-color: colors.$dark;
-  transition: all 200ms linear;
 
-  &:hover {
-    cursor: pointer;
-    background: colors.$lavender;
+  & .btn {
+    @include base.button(28px, 0em 1.5em, typography.$line-height-28);
+    background-color: colors.$dark;
+    transition: all 200ms linear;
+    z-index: 1;
+
+    &:hover {
+      background-color: colors.$lavender;
+    }
   }
 }
 
 // Heading/Footer Svg (Skilled)
-
 .logo-light {
   width: 89px;
   height: 35px;
@@ -45,25 +43,27 @@
 }
 
 // Footer
-
 .footer {
   background-color: colors.$dark;
   padding: 2.25rem 1rem;
   @include base.flex-space;
-}
 
-.footer .btn {
-  @include base.button(28px, 0 1.5em, typography.$line-height-28);
-  @include colors.gradient(colors.$direction-180, colors.$gradient-2);
+  & .btn {
+    @include base.button(28px, 0 1.5em, typography.$line-height-28);
+    @include colors.gradient(colors.$direction-180, colors.$gradient-2);
 
-  &:hover {
-    @include colors.gradient-hover-2();
+    &:hover {
+      @include colors.gradient-hover-2();
+    }
   }
 }
 
 // Hero
-
 .hero {
+  &-img-container {
+    display: flex;
+    justify-content: center;
+  }
   &-title {
     font-size: typography.$font-size-40;
     font-weight: typography.$font-weight-800;
@@ -78,6 +78,10 @@
   & .btn {
     @include base.button(31.5px, 0.75em 1.75em, typography.$line-height-26);
     @include colors.gradient(colors.$direction-180, colors.$gradient-1);
+
+    &:hover {
+      @include colors.gradient-hover-1();
+    }
   }
 }
 
@@ -131,18 +135,22 @@
   transition: all 200ms linear;
 
   &:hover {
-    cursor: pointer;
     color: colors.$light-pink;
   }
 }
 
 // Media - Tablet
-
 @media (min-width: 700px) {
   .hero-info {
     width: 60%;
     margin-top: 5rem;
     margin-bottom: 10rem;
+  }
+
+  .hero-img {
+    position: absolute;
+    top: -6rem;
+    right: -19rem;
   }
   .cards {
     grid-template-columns: 1fr 1fr;
@@ -161,9 +169,18 @@
 
 // Media - Full Screen
 
-@media (min-width: 1000px) {
+@media (min-width: 1100px) {
   body {
     font-size: 18px;
+  }
+
+  .hero-info {
+    margin-top: 11rem;
+    margin-bottom: 20rem;
+  }
+
+  .hero-text {
+    width: 62%;
   }
 
   .cards {

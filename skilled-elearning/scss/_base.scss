@@ -18,6 +18,10 @@ img {
   max-width: 100%;
 }
 
+a {
+  text-decoration: none;
+}
+
 @mixin button($radius, $padding, $line-height) {
   font-family: inherit;
   font-size: inherit;

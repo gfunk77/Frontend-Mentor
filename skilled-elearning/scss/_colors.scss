@@ -22,6 +22,11 @@ $gradient-hover: rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%;
   background: linear-gradient($direction, $list);
 }
 
+@mixin gradient-hover-1() {
+  background: linear-gradient($direction-0, $gradient-hover),
+    linear-gradient($direction-180, $gradient-1);
+}
+
 @mixin gradient-hover-2() {
   background: linear-gradient($direction-0, $gradient-hover),
     linear-gradient($direction-180, $gradient-2-hover);
