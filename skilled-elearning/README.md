@@ -25,6 +25,9 @@ Users should be able to:
 Mobile
 ![]($$$)
 
+Tablet
+![]($$$)
+
 Desktop
 ![]($$$)
 
@@ -35,7 +38,7 @@ Desktop
 
 ### Built with
 
-- html/css
+- html/scss/js
 
 ## Author
 
