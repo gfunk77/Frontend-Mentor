@@ -21,6 +21,12 @@ img {
   background: linear-gradient(180deg, #fff 0%, #f0f1ff 100%);
 }
 
+.container {
+  width: 92%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
 .heading {
   padding: 2.25rem 1rem;
   display: flex;
@@ -78,16 +84,12 @@ img {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #4851ff -54.32%, #f02aa6 100%);
 }
 
-.hero {
-  width: 90%;
-  margin: 0 auto;
-}
-.hero .hero-title {
+.hero-title {
   font-size: 40px;
   font-weight: 800;
   color: #13183f;
 }
-.hero .hero-text {
+.hero-text {
   line-height: 26px;
   color: #83869a;
   margin: 1.5rem 0 1.5rem;
@@ -106,8 +108,7 @@ img {
 }
 
 .cards {
-  margin: 0 auto 4.125rem;
-  width: 90%;
+  margin-bottom: 4.125rem;
   display: grid;
   justify-items: center;
   row-gap: 40px;
@@ -158,15 +159,15 @@ img {
   color: #ffa7c3;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
+  .hero-info {
+    width: 60%;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
   .cards {
     grid-template-columns: 1fr 1fr;
     column-gap: 10px;
-    max-width: 710px;
-  }
-  .card,
-  .first-card {
-    max-width: 350px;
   }
   .first-card {
     padding: 56px 32px;
@@ -176,14 +177,13 @@ img {
     padding: 2.25rem 2.5rem;
   }
 }
-@media (min-width: 1160px) {
+@media (min-width: 1000px) {
   body {
     font-size: 18px;
   }
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
-    max-width: 1110px;
   }
   .card,
   .first-card {
