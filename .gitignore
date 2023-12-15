@@ -16,4 +16,4 @@ Figma/
 .DS_Store
 .prettierignore
 
-/node_modules
+node_modules
