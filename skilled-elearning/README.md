@@ -23,13 +23,13 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![]($$$)
+![](./solutions/mobile-375.png)
 
 Tablet
-![]($$$)
+![](./solutions/tablet-768.png)
 
 Desktop
-![]($$$)
+![](./solutions/desktop-1440.png)
 
 ### Links
 
