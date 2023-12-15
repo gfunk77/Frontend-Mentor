@@ -86,7 +86,6 @@
 }
 
 // Cards
-
 .cards {
   margin-bottom: 4.125rem;
   display: grid;
@@ -151,6 +150,8 @@
     position: absolute;
     top: -6rem;
     right: -19rem;
+    width: 43rem;
+    overflow: hidden;
   }
   .cards {
     grid-template-columns: 1fr 1fr;
@@ -168,7 +169,6 @@
 }
 
 // Media - Full Screen
-
 @media (min-width: 1100px) {
   body {
     font-size: 18px;
@@ -181,6 +181,10 @@
 
   .hero-text {
     width: 62%;
+  }
+
+  .hero-img {
+    width: 60rem;
   }
 
   .cards {

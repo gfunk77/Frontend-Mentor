@@ -9,6 +9,7 @@
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 img {
@@ -173,6 +174,8 @@ a {
     position: absolute;
     top: -6rem;
     right: -19rem;
+    width: 43rem;
+    overflow: hidden;
   }
   .cards {
     grid-template-columns: 1fr 1fr;
@@ -196,6 +199,9 @@ a {
   }
   .hero-text {
     width: 62%;
+  }
+  .hero-img {
+    width: 60rem;
   }
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
