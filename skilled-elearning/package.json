@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch": "sass --watch scss/main.scss:css/main.css",
-    "build": "npm run build:js && npm run watch"
+    "build": "mkdir -p dist/js && cp public/js/app.js dist/js && npm run build:css",
+    "build:css": "sass scss/main.scss dist/css/main.css"
   },
   "keywords": [],
   "author": "",
