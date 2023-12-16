@@ -4,7 +4,8 @@
   "description": "## Table of contents",
   "main": "index.js",
   "scripts": {
-    "watch": "sass --watch scss/main.scss:css/main.css"
+    "watch": "sass --watch scss/main.scss:css/main.css",
+    "build": "npm run build:js && npm run watch"
   },
   "keywords": [],
   "author": "",
