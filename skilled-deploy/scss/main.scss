@@ -1,0 +1,227 @@
+@use 'base';
+@use 'colors';
+@use 'typography';
+
+// Main
+.main {
+  min-height: 100vh;
+  @include colors.gradient(colors.$direction-180, colors.$gradient-main);
+}
+
+.container {
+  width: 92%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+// Heading
+.heading {
+  padding: 2.25rem 1rem;
+  @include base.flex-space;
+
+  & .btn {
+    @include base.button(28px, 0em 1.5em, typography.$line-height-28);
+    background-color: colors.$dark;
+    transition: all 200ms linear;
+    z-index: 1;
+
+    &:hover {
+      background-color: colors.$lavender;
+    }
+  }
+}
+
+// Heading/Footer Svg (Skilled)
+.logo-light {
+  width: 89px;
+  height: 35px;
+}
+
+.img-logo-light {
+  height: 100%;
+  object-fit: contain;
+}
+
+// Footer
+.footer {
+  background-color: colors.$dark;
+  padding: 2.25rem 1rem;
+  @include base.flex-space;
+
+  & .btn {
+    @include base.button(28px, 0 1.5em, typography.$line-height-28);
+    @include colors.gradient(colors.$direction-180, colors.$gradient-2);
+
+    &:hover {
+      @include colors.gradient-hover-2();
+    }
+  }
+}
+
+// Hero
+.hero {
+  &-img-container {
+    display: flex;
+    justify-content: center;
+  }
+  &-title {
+    font-size: typography.$font-size-40;
+    font-weight: typography.$font-weight-800;
+    color: colors.$dark;
+  }
+
+  &-text {
+    line-height: typography.$line-height-26;
+    color: colors.$gray;
+    margin: 1.5rem 0 1.5rem;
+  }
+  & .btn {
+    @include base.button(31.5px, 0.75em 1.75em, typography.$line-height-26);
+    @include colors.gradient(colors.$direction-180, colors.$gradient-1);
+
+    &:hover {
+      @include colors.gradient-hover-1();
+    }
+  }
+}
+
+// Cards
+.cards {
+  margin-bottom: 4.125rem;
+  display: grid;
+  justify-items: center;
+  row-gap: 40px;
+}
+
+.first-card {
+  @include colors.gradient(colors.$direction-180, colors.$gradient-1);
+  color: colors.$white;
+  padding: 24px 28px 32px;
+  border-radius: 10px;
+}
+
+.card {
+  position: relative;
+  padding: 28px 32px;
+  background-color: colors.$white;
+  border-radius: 10px;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+
+  &-img {
+    position: absolute;
+    top: -28px;
+    left: 28px;
+  }
+
+  &-title {
+    color: colors.$dark;
+    font-size: 20px;
+    font-weight: 800;
+    margin-top: 1.5rem;
+  }
+
+  &-text {
+    line-height: typography.$line-height-26;
+    color: colors.$gray;
+    margin: 1rem 0 1.5rem;
+  }
+
+  &-action {
+    font-size: typography.$font-size-18;
+    line-height: typography.$line-height-28;
+    color: colors.$dark-pink;
+    transition: all 200ms linear;
+
+    &:hover {
+      color: colors.$light-pink;
+    }
+  }
+}
+
+// Media - Tablet
+@media (min-width: 700px) {
+  .hero-info {
+    width: 60%;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+  }
+
+  .hero-img {
+    position: absolute;
+    top: -6rem;
+    right: -19rem;
+    width: 43rem;
+    overflow: hidden;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+  }
+
+  .first-card {
+    padding: 56px 32px;
+  }
+
+  .footer,
+  .heading {
+    padding: 2.25rem 2.5rem;
+  }
+}
+
+// Media - Full Screen
+@media (min-width: 1100px) {
+  body {
+    font-size: 18px;
+  }
+
+  .hero-info {
+    margin-top: 11rem;
+    margin-bottom: 20rem;
+  }
+
+  .hero-text {
+    width: 62%;
+  }
+
+  .hero-img {
+    width: 60rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+
+  .card,
+  .first-card {
+    border-radius: 15px;
+  }
+
+  .first-card-content {
+    font-size: typography.$font-size-32;
+  }
+
+  .card-title {
+    font-size: typography.$font-size-24;
+    margin: 32px 0 0;
+  }
+
+  .card-text {
+    margin: 1.5rem 0;
+    line-height: typography.$line-height-28;
+  }
+
+  .card:nth-child(3) .card-text,
+  .card:nth-child(4) .card-text {
+    margin: 1.5rem 0 52px;
+  }
+
+  .footer,
+  .heading {
+    padding: 2.25rem 10.3rem;
+  }
+  .logo-light {
+    width: 114px;
+    height: 45px;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "skilled-elearning",
+  "source": "public/index.html",
+  "version": "1.0.0",
+  "description": "## Table of contents",
+  "scripts": {
+    "watch": "sass --watch scss/main.scss:css/main.css",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}

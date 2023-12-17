@@ -1,0 +1,33 @@
+$lavender: #666ca3;
+$dark: #13183f;
+$gray: #83869a;
+$dark-pink: #f74780;
+$light-pink: #ffa7c3;
+$white: #fff;
+
+$direction-180: 180deg;
+$direction-0: 0deg;
+
+$gradientPink: #f02aa6;
+$gradientOrange: #ff6f48;
+$gradientBlue: #4851ff;
+
+$gradient-main: #fff 0%, #f0f1ff 100%;
+$gradient-1: $gradientPink 0.04%, $gradientOrange 100%;
+$gradient-2: $gradientBlue 0%, $gradientPink 99.92%;
+$gradient-2-hover: $gradientBlue -54.32%, $gradientPink 100%;
+$gradient-hover: rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%;
+
+@mixin gradient($direction, $list) {
+  background: linear-gradient($direction, $list);
+}
+
+@mixin gradient-hover-1() {
+  background: linear-gradient($direction-0, $gradient-hover),
+    linear-gradient($direction-180, $gradient-1);
+}
+
+@mixin gradient-hover-2() {
+  background: linear-gradient($direction-0, $gradient-hover),
+    linear-gradient($direction-180, $gradient-2-hover);
+}

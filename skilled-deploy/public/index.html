@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <script type="module" src="./js/app.js" defer></script>
+    <title>Frontend Mentor | Skilled e-learning landing page</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="heading">
+        <div class="logo-light">
+          <img class="img-logo-light" src="./assets/logo-dark.svg" alt="logo dark" />
+        </div>
+        <button class="btn">Get Started</button>
+      </div>
+      <div class="container">
+        <div class="hero">
+          <div class="hero-info">
+            <h1 class="hero-title">
+              Maximize skill, <br />
+              minimize budget
+            </h1>
+            <p class="hero-text">
+              Our modern courses across a range of in-demand skills will give you the knowledge you
+              need to live the life you want.
+            </p>
+            <button class="btn">Get Started</button>
+          </div>
+          <div class="hero-img-container">
+            <picture>
+              <!-- desktop -->
+              <source
+                srcset="./assets/image-hero-desktop@2x.webp"
+                type="image/webp"
+                media="(min-width: 1100px) and (min-resolution: 2dppx)" />
+              <source
+                srcset="./assets/image-hero-desktop@2x.png"
+                type="image/png"
+                media="(min-width: 1100px) and (min-resolution: 2dppx)" />
+              <source
+                srcset="./assets/image-hero-desktop.webp"
+                type="image/webp"
+                media="(min-width: 1100px)" />
+              <source
+                srcset="./assets/image-hero-desktop.png"
+                type="image/png"
+                media="(min-width: 1100px)" />
+              <!-- tablet -->
+              <source
+                srcset="./assets/image-hero-tablet@2x.webp"
+                type="image/webp"
+                media="(min-width: 700px) and (min-resolution: 2dppx)" />
+              <source
+                srcset="./assets/image-hero-tablet@2x.png"
+                type="image/png"
+                media="(min-width: 700px) and (min-resolution: 2dppx)" />
+              <source
+                srcset="./assets/image-hero-tablet.webp"
+                type="image/webp"
+                media="(min-width: 700px)" />
+              <source
+                srcset="./assets/image-hero-tablet.png"
+                type="image/png"
+                media="(min-width: 700px)" />
+              <!-- mobile -->
+              <source
+                srcset="./assets/image-hero-mobile@2x.webp"
+                type="image/webp"
+                media="(min-resolution: 2dppx )" />
+              <source
+                srcset="./assets/image-hero-mobile@2x.png"
+                type="image/png"
+                media="min-resolution(2dppx)" />
+              <source srcset="./assets/image-hero-mobile.webp" type="image/webp" />
+              <source srcset="./assets/image-hero-mobile.png" type="image/png" />
+              <img class="hero-img" src="./assets/image-hero-mobile.png" alt="mobile coffee" />
+            </picture>
+          </div>
+        </div>
+        <div class="cards">
+          <div class="first-card">
+            <h2 class="first-card-content">Check out our most popular courses!</h2>
+          </div>
+          <!-- Card Here -->
+          <!-- card 1 -->
+          <div class="card">
+            <img class="card-img" src="./assets/icon-animation.svg" alt="Animation" />
+            <h3 class="card-title">Animation</h3>
+            <p class="card-text">
+              Learn the latest animation techniques to create stunning motion design and captivate
+              your audience.
+            </p>
+            <a href="#"><h4 class="card-action">Get Started</h4></a>
+          </div>
+          <!-- card 2-->
+          <div class="card">
+            <img class="card-img" src="./assets/icon-design.svg" alt="Design" />
+            <h3 class="card-title">Design</h3>
+            <p class="card-text">
+              Create beautiful, usable interfaces to help shape the future of how the web looks.
+            </p>
+            <a href="#"><h4 class="card-action">Get Started</h4></a>
+          </div>
+          <!-- card 3-->
+          <div class="card">
+            <img class="card-img" src="./assets/icon-photography.svg" alt="Photography" />
+            <h3 class="card-title">Photography</h3>
+            <p class="card-text">
+              Explore critical fundamentals like lighting, composition, and focus to capture
+              exceptional photos.
+            </p>
+            <a href="#"><h4 class="card-action">Get Started</h4></a>
+          </div>
+          <!-- card 4-->
+          <div class="card">
+            <img class="card-img" src="./assets/icon-crypto.svg" alt="Crypto" />
+            <h3 class="card-title">Crypto</h3>
+            <p class="card-text">
+              All you need to know to get started investing in crypto. Go from beginner to advanced
+              with this 54 hour course.
+            </p>
+            <a href="#"><h4 class="card-action">Get Started</h4></a>
+          </div>
+          <!-- card 5-->
+          <div class="card">
+            <img class="card-img" src="./assets/icon-business.svg" alt="Business" />
+            <h3 class="card-title">Business</h3>
+            <p class="card-text">
+              A step-by-step playbook to help you start, scale, and sustain your business without
+              outside investment.
+            </p>
+            <a href="#"><h4 class="card-action">Get Started</h4></a>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="logo-light">
+          <img class="img-logo-light" src="./assets/logo-light.svg" alt="logo light" />
+        </div>
+        <button class="btn">Get Started</button>
+      </footer>
+    </div>
+  </body>
+</html>

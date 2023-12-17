@@ -1,0 +1,41 @@
+@use 'typography';
+@use 'colors';
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: typography.$font-family;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+@mixin button($radius, $padding, $line-height) {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: typography.$font-weight-700;
+  line-height: $line-height;
+  border-radius: $radius;
+  border: none;
+  color: colors.$white;
+  padding: $padding;
+  cursor: pointer;
+}
+
+@mixin flex-space() {
+  display: flex;
+  justify-content: space-between;
+}
