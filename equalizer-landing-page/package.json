@@ -1,0 +1,15 @@
+{
+  "name": "equalizer-landing-page",
+  "description": "## Table of contents",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "watch": "sass --watch styles/main.scss:styles/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
