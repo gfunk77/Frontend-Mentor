@@ -16,4 +16,160 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
 }
 
+.main {
+  min-height: 100vh;
+  background: #fcfaf9 url("../../src/assets/bg-main-mobile.png") top -100vh left -50vw/cover no-repeat;
+}
+
+.heading-container {
+  padding: 2rem 24px 0;
+  color: #191826;
+}
+
+.heading-logo {
+  margin-bottom: 4rem;
+}
+
+.heading-title {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.455px;
+  margin-bottom: 20px;
+}
+
+.heading-para {
+  line-height: 26px;
+}
+
+.black {
+  background: #191826;
+  border-radius: 12px;
+  margin-top: 10.375rem;
+  position: relative;
+}
+
+.black-pattern {
+  margin: 0 auto;
+}
+
+.phone {
+  width: 60%;
+  max-width: 209px;
+  max-height: 430px;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.orange {
+  background-color: #fa7453;
+  color: #fcfaf9;
+  padding: 3rem 2.25rem;
+  border-radius: 12px;
+  transform: translateY(-3rem);
+}
+
+.orange-info {
+  margin-bottom: 2.25rem;
+}
+
+.orange-title {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 12px;
+}
+
+.orange-text {
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.orange-btns {
+  padding-left: 6px;
+}
+
+.btn-apple {
+  margin-bottom: 1rem;
+  background-color: #191826;
+  color: #fcfaf9;
+}
+
+.btn-apple:hover,
+.btn-apple:focus {
+  background-color: #66e2dc;
+}
+
+.btn-android {
+  background-color: #fcfaf9;
+  color: #191826;
+}
+
+.btn-android:hover,
+.btn-android:focus {
+  background-color: #ffb964;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  padding: 1em 0;
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.cost {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 32px;
+}
+
+.price {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.month {
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+}
+
+.footer {
+  color: #191826;
+  padding: 1rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-para {
+  line-height: 26px;
+}
+
+.icons {
+  display: flex;
+  gap: 1.5rem;
+}
+
 /*# sourceMappingURL=main.css.map */

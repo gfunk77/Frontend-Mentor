@@ -1,3 +1,159 @@
 @use 'colors' as c;
 @use 'typography' as t;
 @use 'base' as b;
+
+.main {
+  min-height: 100vh;
+  background: c.$white url('../../src/assets/bg-main-mobile.png') top -100vh left -50vw / cover
+    no-repeat;
+}
+
+// heading
+
+.heading-container {
+  padding: 2rem 24px 0;
+  color: c.$black;
+}
+
+.heading-logo {
+  margin-bottom: 4rem;
+}
+
+.heading-title {
+  font-size: t.$font-size-40;
+  font-weight: t.$weight-700;
+  line-height: t.$line-48;
+  letter-spacing: t.$spacing-2;
+  margin-bottom: 20px;
+}
+
+.heading-para {
+  line-height: t.$line-26;
+}
+
+.black {
+  background: c.$black;
+  border-radius: 12px;
+  margin-top: 10.375rem;
+  position: relative;
+}
+
+.black-pattern {
+  margin: 0 auto;
+}
+
+.phone {
+  width: 60%;
+  max-width: 209px;
+  max-height: 430px;
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.orange {
+  background-color: c.$orange;
+  color: c.$white;
+  padding: 3rem 2.25rem;
+  border-radius: 12px;
+  transform: translateY(-3rem);
+}
+
+.orange-info {
+  margin-bottom: 2.25rem;
+}
+
+.orange-title {
+  font-size: t.$font-size-32;
+  font-weight: t.$weight-700;
+  line-height: t.$line-40;
+  margin-bottom: 12px;
+}
+
+.orange-text {
+  font-size: t.$font-size-18;
+  line-height: t.$line-28;
+}
+
+.orange-btns {
+  padding-left: 6px;
+}
+
+.btn-apple {
+  margin-bottom: 1rem;
+  background-color: c.$black;
+  color: c.$white;
+}
+.btn-apple:hover,
+.btn-apple:focus {
+  background-color: c.$aqua;
+}
+.btn-android {
+  background-color: c.$white;
+  color: c.$black;
+}
+.btn-android:hover,
+.btn-android:focus {
+  background-color: c.$yellow;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  padding: 1em 0;
+  font-family: inherit;
+  font-size: t.$font-size-18;
+  font-weight: t.$weight-700;
+  line-height: t.$line-32;
+  letter-spacing: t.$spacing-3;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.cost {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 32px;
+}
+
+.price {
+  font-size: t.$font-size-64;
+  font-weight: t.$weight-700;
+  line-height: t.$line-52;
+}
+
+.month {
+  font-size: t.$font-size-20;
+  line-height: t.$line-32;
+  letter-spacing: t.$spacing-3;
+}
+
+.footer {
+  color: c.$black;
+  padding: 1rem 1.5rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-para {
+  line-height: t.$line-26;
+}
+
+.icons {
+  display: flex;
+  gap: 1.5rem;
+}
