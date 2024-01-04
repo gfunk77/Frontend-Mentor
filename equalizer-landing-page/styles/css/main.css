@@ -69,6 +69,7 @@ body {
   padding: 3rem 2.25rem;
   border-radius: 12px;
   transform: translateY(-3rem);
+  position: absolute;
 }
 
 .orange-info {
@@ -155,6 +156,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 4rem;
+  margin-top: 35rem;
 }
 
 .copyright {
@@ -170,6 +172,63 @@ body {
 .icons {
   display: flex;
   gap: 1.5rem;
+}
+
+.bg-pattern-1 {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 92%;
+    margin: auto;
+    padding: 4rem 0 5rem;
+  }
+  .heading-container,
+  .footer {
+    padding: unset;
+  }
+  .heading-logo {
+    margin-bottom: 6rem;
+  }
+  .heading-container {
+    width: 75%;
+  }
+  .heading-title {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: -0.727px;
+    margin-bottom: 28px;
+  }
+  .heading-para {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .phone {
+    top: -130px;
+    left: 29%;
+    max-width: 270px;
+    max-height: 556px;
+  }
+  .black {
+    height: 600px;
+    margin-top: 15.5rem;
+  }
+  .orange {
+    max-width: 399px;
+    top: 44%;
+    left: 35%;
+    padding: 3rem;
+  }
+  .footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15rem;
+  }
+  .bg-pattern-1 {
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
