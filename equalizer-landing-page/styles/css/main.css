@@ -14,6 +14,7 @@ img {
 
 body {
   font-family: "IBM Plex Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 .main {
@@ -179,6 +180,9 @@ body {
 }
 
 @media (min-width: 600px) {
+  .main {
+    background: #fcfaf9 url("../../src/assets/bg-main-tablet.png") top -500px left -800px/cover no-repeat;
+  }
   .container {
     width: 92%;
     margin: auto;
@@ -228,6 +232,10 @@ body {
   }
   .bg-pattern-1 {
     display: block;
+    position: absolute;
+    top: -4%;
+    right: -4%;
+    width: 250px;
   }
 }
 
