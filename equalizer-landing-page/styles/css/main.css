@@ -185,6 +185,7 @@ body {
   }
   .container {
     width: 92%;
+    max-width: 1110px;
     margin: auto;
     padding: 4rem 0 5rem;
   }
@@ -230,12 +231,57 @@ body {
     justify-content: space-between;
     margin-top: 15rem;
   }
+  .footer-para {
+    width: 25em;
+  }
   .bg-pattern-1 {
     display: block;
     position: absolute;
     top: -4%;
     right: -4%;
     width: 250px;
+  }
+}
+@media (min-width: 1100px) {
+  .main {
+    background: #fcfaf9 url("../../src/assets/bg-main-desktop.png") top -200px left -200px/cover no-repeat;
+  }
+  .bg-pattern-1 {
+    right: 0;
+  }
+  .heading-title {
+    max-width: 50rem;
+  }
+  .black-pattern {
+    margin: 0 33%;
+  }
+  .phone {
+    left: 28%;
+  }
+  .orange {
+    max-width: 446px;
+    padding: 54px 54px 48px;
+    top: 30%;
+    left: 53%;
+  }
+  .orange-info {
+    margin-bottom: 40px;
+  }
+  .orange-title {
+    font-size: 40px;
+    line-height: 52px;
+    margin-bottom: 22px;
+  }
+  .orange-text {
+    font-size: 20px;
+    line-height: 34px;
+  }
+  .orange .cost {
+    margin-bottom: 46px;
+  }
+  .copyright {
+    flex-direction: row;
+    gap: 9rem;
   }
 }
 
