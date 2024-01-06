@@ -175,6 +175,30 @@ body {
   gap: 1.5rem;
 }
 
+.icon-btn {
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: all 200ms linear;
+}
+
+.fb:hover,
+.fb:focus {
+  color: orange;
+}
+
+.instagram:hover,
+.instagram:focus {
+  background: linear-gradient(135deg, #833ab4, #e1306c);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.twitter:hover,
+.twitter:focus {
+  color: #1da1f2;
+}
+
 .bg-pattern-1 {
   display: none;
 }
