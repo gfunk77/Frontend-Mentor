@@ -1,4 +1,4 @@
-@use 'typography' as t;
+@use 'variables' as v;
 
 *,
 ::after,
@@ -14,6 +14,37 @@ img {
 }
 
 body {
-  font-family: t.$font-family;
+  font-family: v.$font-family;
   overflow-x: hidden;
+}
+
+@mixin font-sh($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
+@mixin font-swh($font-size, $font-weight, $line-height) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+}
+
+@mixin position($top, $left) {
+  top: $top;
+  left: $left;
+}
+
+@mixin btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  border-radius: 12px;
+  border: none;
+  padding: 1em 0;
+  font-family: inherit;
+  letter-spacing: v.$spacing-3;
+  transition: all 200ms linear;
+  cursor: pointer;
 }

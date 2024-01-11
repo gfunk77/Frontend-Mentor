@@ -1,18 +1,15 @@
-@use 'colors' as c;
-@use 'typography' as t;
 @use 'base' as b;
+@use 'variables' as v;
 
 .main {
   min-height: 100vh;
-  background: c.$white url('../../src/assets/bg-main-mobile.png') top -100vh left -50vw / cover
+  background: v.$white url('../../src/assets/bg-main-mobile.png') top -100vh left -50vw / cover
     no-repeat;
 }
 
-// heading
-
 .heading-container {
   padding: 2rem 24px 0;
-  color: c.$black;
+  color: v.$black;
 }
 
 .heading-logo {
@@ -20,19 +17,17 @@
 }
 
 .heading-title {
-  font-size: t.$font-size-40;
-  font-weight: t.$weight-700;
-  line-height: t.$line-48;
-  letter-spacing: t.$spacing-2;
+  @include b.font-swh(v.$font-size-40, v.$weight-700, v.$line-48);
+  letter-spacing: v.$spacing-2;
   margin-bottom: 20px;
 }
 
 .heading-para {
-  line-height: t.$line-26;
+  line-height: v.$line-26;
 }
 
 .black {
-  background: c.$black;
+  background: v.$black;
   border-radius: 12px;
   margin-top: 10.375rem;
   position: relative;
@@ -47,14 +42,13 @@
   max-width: 209px;
   max-height: 430px;
   position: absolute;
-  top: -100px;
-  left: 50%;
+  @include b.position(-100px, 50%);
   transform: translateX(-50%);
 }
 
 .orange {
-  background-color: c.$orange;
-  color: c.$white;
+  background-color: v.$orange;
+  color: v.$white;
   padding: 3rem 2.25rem;
   border-radius: 12px;
   transform: translateY(-3rem);
@@ -66,15 +60,12 @@
 }
 
 .orange-title {
-  font-size: t.$font-size-32;
-  font-weight: t.$weight-700;
-  line-height: t.$line-40;
+  @include b.font-swh(v.$font-size-32, v.$weight-700, v.$line-40);
   margin-bottom: 12px;
 }
 
 .orange-text {
-  font-size: t.$font-size-18;
-  line-height: t.$line-28;
+  @include b.font-sh(v.$font-size-18, v.$line-28);
 }
 
 .orange-btns {
@@ -83,38 +74,25 @@
 
 .btn-apple {
   margin-bottom: 1rem;
-  background-color: c.$black;
-  color: c.$white;
+  background-color: v.$black;
+  color: v.$white;
 }
 .btn-apple:hover,
 .btn-apple:focus {
-  background-color: c.$aqua;
+  background-color: v.$aqua;
 }
 .btn-android {
-  background-color: c.$white;
-  color: c.$black;
+  background-color: v.$white;
+  color: v.$black;
 }
 .btn-android:hover,
 .btn-android:focus {
-  background-color: c.$yellow;
+  background-color: v.$yellow;
 }
 
 .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  width: 100%;
-  border-radius: 12px;
-  border: none;
-  padding: 1em 0;
-  font-family: inherit;
-  font-size: t.$font-size-18;
-  font-weight: t.$weight-700;
-  line-height: t.$line-32;
-  letter-spacing: t.$spacing-3;
-  cursor: pointer;
-  transition: all 200ms linear;
+  @include b.btn;
+  @include b.font-swh(v.$font-size-18, v.$weight-700, v.$line-32);
 }
 
 .cost {
@@ -125,19 +103,16 @@
 }
 
 .price {
-  font-size: t.$font-size-64;
-  font-weight: t.$weight-700;
-  line-height: t.$line-52;
+  @include b.font-swh(v.$font-size-64, v.$weight-700, v.$line-52);
 }
 
 .month {
-  font-size: t.$font-size-20;
-  line-height: t.$line-32;
-  letter-spacing: t.$spacing-3;
+  @include b.font-sh(v.$font-size-20, v.$line-32);
+  letter-spacing: v.$spacing-3;
 }
 
 .footer {
-  color: c.$black;
+  color: v.$black;
   padding: 1rem 1.5rem 4rem;
   display: flex;
   flex-direction: column;
@@ -152,7 +127,7 @@
 }
 
 .footer-para {
-  line-height: t.$line-26;
+  line-height: v.$line-26;
 }
 
 .icons {
@@ -172,7 +147,7 @@
 }
 .instagram:hover,
 .instagram:focus {
-  background: linear-gradient(135deg, #833ab4, #e1306c);
+  background: linear-gradient(135deg, v.$purple, v.$pink);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -180,7 +155,7 @@
 
 .twitter:hover,
 .twitter:focus {
-  color: #1da1f2;
+  color: v.$twitter;
 }
 
 .bg-pattern-1 {
@@ -189,7 +164,7 @@
 
 @media (min-width: 600px) {
   .main {
-    background: c.$white url('../../src/assets/bg-main-tablet.png') top -500px left -800px / cover
+    background: v.$white url('../../src/assets/bg-main-tablet.png') top -500px left -800px / cover
       no-repeat;
   }
   .container {
@@ -213,20 +188,17 @@
   }
 
   .heading-title {
-    font-size: 64px;
-    line-height: t.$line-64;
-    letter-spacing: t.$spacing-4;
+    @include b.font-sh(v.$font-size-64, v.$line-64);
+    letter-spacing: v.$spacing-4;
     margin-bottom: 28px;
   }
 
   .heading-para {
-    font-size: t.$font-size-18;
-    line-height: t.$line-28;
+    @include b.font-sh(v.$font-size-18, v.$line-28);
   }
 
   .phone {
-    top: -130px;
-    left: 29%;
+    @include b.position(-130px, 29%);
     max-width: 270px;
     max-height: 556px;
   }
@@ -238,9 +210,8 @@
 
   .orange {
     max-width: 399px;
-    top: 44%;
-    left: 35%;
     padding: 3rem;
+    @include b.position(44%, 35%);
   }
 
   .footer {
@@ -256,15 +227,15 @@
 
   .bg-pattern-1 {
     display: block;
+    width: 250px;
     position: absolute;
     top: -4%;
     right: -4%;
-    width: 250px;
   }
 }
 @media (min-width: 1100px) {
   .main {
-    background: c.$white url('../../src/assets/bg-main-desktop.png') top -200px left -200px / cover
+    background: v.$white url('../../src/assets/bg-main-desktop.png') top -200px left -200px / cover
       no-repeat;
   }
   .bg-pattern-1 {
@@ -286,22 +257,19 @@
   .orange {
     max-width: 446px;
     padding: 54px 54px 48px;
-    top: 30%;
-    left: 53%;
+    @include b.position(30%, 53%);
 
     &-info {
       margin-bottom: 40px;
     }
 
     &-title {
-      font-size: t.$font-size-40;
-      line-height: t.$line-52;
+      @include b.font-sh(v.$font-size-40, v.$line-52);
       margin-bottom: 22px;
     }
 
     &-text {
-      font-size: t.$font-size-20;
-      line-height: t.$line-34;
+      @include b.font-sh(v.$font-size-20, v.$line-34);
     }
 
     & .cost {
