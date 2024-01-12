@@ -2,14 +2,19 @@
   "name": "equalizer-landing-page",
   "description": "## Table of contents",
   "version": "1.0.0",
-  "main": "index.js",
+  "source": "src/index.html",
   "scripts": {
-    "watch": "sass --watch styles/scss/main.scss:styles/css/main.css"
+    "watch": "sass --watch styles/scss/main.scss:styles/css/main.css",
+    "start": "parcel",
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
   }
 }
