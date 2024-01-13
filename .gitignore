@@ -4,6 +4,7 @@
 #####################################################
 *.sketch
 *.fig
+*.ttf
 Figma/
 
 # Avoid accidental XD upload if you convert the design file
