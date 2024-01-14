@@ -1,7 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+:root {
+  --family: 'Figtree', sans-serif;
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 7%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--family);
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  color: var(--black);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.main {
+  min-height: 100vh;
+  background: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: var(--white);
+  max-width: 327px;
+  padding: 1.5rem;
+  border: 1px solid var(--black);
+  border-radius: 20px;
+  box-shadow: 8px 8px 0px 0px #000;
+  transition: all 400ms linear;
+}
+
+.illustration {
+  border-radius: 10px;
+}
+
+.content {
+  margin: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.learning,
+.publish-date {
+  font-size: 0.75rem;
+  line-height: 18px;
+}
+
+.learning {
+  font-weight: 800;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  background-color: var(--yellow);
+  width: 73px;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 30px;
+  transition: all 200ms linear;
+}
+
+.text {
+  color: var(--grey);
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author p {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 21px;
+}
+
+@media (min-width: 376px) {
+  .card {
+    max-width: 384px;
+  }
+  .learning,
+  .publish-date {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .learning {
+    width: 82px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+    line-height: 1.25rem;
+  }
+
+  .title:hover {
+    color: var(--yellow);
+    cursor: url('./assets/images/cursor.svg'), auto;
+    filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
+  }
+
+  .card:has(.title:hover) {
+    box-shadow: 16px 16px 0px 0px #000;
+  }
+
+  .text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--black);
 }
