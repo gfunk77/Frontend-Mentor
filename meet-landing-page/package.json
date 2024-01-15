@@ -1,0 +1,20 @@
+{
+  "name": "meet-landing-page",
+  "version": "1.0.0",
+  "description": "## Table of contents",
+  "source": "src/index.html",
+  "scripts": {
+    "watch": "sass --watch styles/scss/main.scss:styles/css/main.css",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.7"
+  },
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
+}
