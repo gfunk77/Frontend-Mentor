@@ -13,6 +13,7 @@ body {
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 500;
+  overflow-x: hidden;
 }
 
 img {
@@ -30,7 +31,15 @@ img {
   border: none;
   border-radius: 29px;
   padding: 0.5em 1.5em;
+  cursor: pointer;
   transition: all 200ms linear;
+  display: block;
+}
+
+@mixin fonts($size, $weight, $height) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
 }
 
 .btn-teal {
