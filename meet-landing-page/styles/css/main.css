@@ -17,4 +17,62 @@ img {
   max-width: 100%;
 }
 
+.btn-teal {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 900;
+  line-height: 26px;
+  color: #fafafa;
+  background-color: #4d96a9;
+  border: none;
+  border-radius: 29px;
+  padding: 0.5em 1.5em;
+  transition: all 200ms linear;
+}
+.btn-teal span {
+  color: #8fe3f9;
+}
+.btn-teal:hover,
+.btn-teal :focus {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 900;
+  line-height: 26px;
+  color: #fafafa;
+  background-color: #71c0d4;
+  border: none;
+  border-radius: 29px;
+  padding: 0.5em 1.5em;
+  transition: all 200ms linear;
+}
+
+.btn-purple {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 900;
+  line-height: 26px;
+  color: #fafafa;
+  background-color: #855fb1;
+  border: none;
+  border-radius: 29px;
+  padding: 0.5em 1.5em;
+  transition: all 200ms linear;
+}
+.btn-purple span {
+  color: #d9b8ff;
+}
+.btn-purple:hover,
+.btn-purple :focus {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: 900;
+  line-height: 26px;
+  color: #fafafa;
+  background-color: #b18bdd;
+  border: none;
+  border-radius: 29px;
+  padding: 0.5em 1.5em;
+  transition: all 200ms linear;
+}
+
 /*# sourceMappingURL=main.css.map */
