@@ -27,7 +27,7 @@ img {
   background-color: #4d96a9;
   border: none;
   border-radius: 29px;
-  padding: 0.5em 1.5em;
+  padding: 1em 2em;
   cursor: pointer;
   transition: all 200ms linear;
   display: block;
@@ -45,7 +45,7 @@ img {
   background-color: #71c0d4;
   border: none;
   border-radius: 29px;
-  padding: 0.5em 1.5em;
+  padding: 1em 2em;
   cursor: pointer;
   transition: all 200ms linear;
   display: block;
@@ -60,7 +60,7 @@ img {
   background-color: #855fb1;
   border: none;
   border-radius: 29px;
-  padding: 0.5em 1.5em;
+  padding: 1em 2em;
   cursor: pointer;
   transition: all 200ms linear;
   display: block;
@@ -78,10 +78,15 @@ img {
   background-color: #b18bdd;
   border: none;
   border-radius: 29px;
-  padding: 0.5em 1.5em;
+  padding: 1em 2em;
   cursor: pointer;
   transition: all 200ms linear;
   display: block;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .logo {
@@ -123,6 +128,56 @@ img {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+@media (min-width: 576px) {
+  .banner-actions {
+    flex-direction: row;
+  }
+  .img-hero-tablet {
+    width: 110%;
+  }
+  .banner-title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 48px;
+  }
+}
+@media (min-width: 1170px) {
+  .img-hero-tablet {
+    display: none;
+  }
+  .img-hero-left,
+  .img-hero-right {
+    display: block;
+  }
+  .banner-text {
+    margin: 34px 0 32px;
+  }
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    column-gap: 88px;
+  }
+  .banner {
+    width: unset;
+  }
+  .banner-text {
+    max-width: 29em;
+  }
+  .img-hero-left {
+    margin-left: -6%;
+  }
+  .img-hero-right {
+    align-self: end;
+    margin-left: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .img-hero-left,
+  .img-hero-right {
+    margin: 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
