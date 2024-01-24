@@ -46,6 +46,50 @@
   }
 }
 
+.pics {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1080px;
+
+  &-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5rem;
+    column-gap: 1.5rem;
+  }
+
+  &-img {
+    border-radius: 8px;
+  }
+}
+
+.lollipop {
+  display: flex;
+  justify-content: center;
+  margin: 4rem 0;
+
+  &-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &-ball {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid rgba(135, 135, 157, 0.25);
+
+    color: v.$gray;
+    font-weight: v.$font-weight-900;
+    line-height: v.$line-height-26;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
 @media (min-width: 576px) {
   .banner-actions {
     flex-direction: row;
@@ -56,6 +100,15 @@
 
   .banner-title {
     @include b.fonts(v.$font-size-48, v.$font-weight-900, v.$line-height-48);
+  }
+
+  .lollipop {
+    margin: 5rem 0 4.2rem;
+  }
+
+  .pics-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
   }
 }
 
@@ -92,6 +145,10 @@
   .img-hero-right {
     align-self: end;
     margin-left: 1rem;
+  }
+
+  .lollipop {
+    margin: 6.8rem 0 4rem;
   }
 }
 
