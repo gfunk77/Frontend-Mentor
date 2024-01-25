@@ -90,6 +90,36 @@
   }
 }
 
+.text {
+  width: 90%;
+  margin: 4rem auto;
+  max-width: 1080px;
+  text-align: center;
+
+  &-container {
+    max-width: 573px;
+  }
+
+  &-subtitle {
+    @include b.fonts(v.$font-size-16, v.$font-weight-900, v.$line-height-26);
+    color: v.$teal;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  &-title {
+    color: v.$black;
+    @include b.fonts(v.$font-size-32, v.$font-weight-900, v.$line-height-36);
+    margin: 1.5rem 0 2rem;
+    padding: 0 1rem;
+  }
+
+  &-para {
+    color: v.$gray;
+    line-height: v.$line-height-26;
+  }
+}
+
 @media (min-width: 576px) {
   .banner-actions {
     flex-direction: row;
@@ -109,6 +139,18 @@
   .pics-container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1rem;
+  }
+
+  .text {
+    display: flex;
+    justify-content: center;
+
+    &-title {
+      font-size: v.$font-size-40;
+      line-height: v.$line-height-44;
+      padding: 0 4rem;
+      margin-top: 16px;
+    }
   }
 }
 
@@ -149,6 +191,11 @@
 
   .lollipop {
     margin: 6.8rem 0 4rem;
+  }
+
+  .text-para {
+    font-size: v.$font-size-18;
+    padding: 0 1.5rem;
   }
 }
 
