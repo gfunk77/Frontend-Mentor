@@ -199,6 +199,58 @@ img {
   line-height: 26px;
 }
 
+.footer {
+  background: lightgray url("../../src/assets/mobile/image-footer.jpg") center/cover no-repeat;
+  height: 438px;
+  margin-top: 11rem;
+  color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.footer-lollipop {
+  margin: 0;
+  position: absolute;
+  top: -112px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+.footer-lollipop-ball {
+  background-color: #fafafa;
+}
+.footer-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #4d96a9;
+  opacity: 0.9;
+}
+.footer-container {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+.footer-title {
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 36px;
+}
+.footer-para {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  margin: 1.5rem 0 2rem;
+}
+.footer-btn {
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 576px) {
   .banner-actions {
     flex-direction: row;
