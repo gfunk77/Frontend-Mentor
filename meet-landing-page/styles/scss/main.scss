@@ -168,6 +168,7 @@
   &-para {
     @include b.fonts(v.$font-size-18, v.$font-weight-500, v.$line-height-26);
     margin: 1.5rem 0 2rem;
+    padding: 0 1rem;
   }
 
   &-btn {
