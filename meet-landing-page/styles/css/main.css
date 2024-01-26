@@ -281,6 +281,26 @@ img {
     padding: 0 4rem;
     margin-top: 16px;
   }
+  .footer {
+    background: lightgray url("../../src/assets/tablet/image-footer.jpg") center/cover no-repeat;
+  }
+  .footer-title {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 44px;
+    max-width: 50%;
+    margin: 4rem auto 2rem;
+  }
+  .footer-para {
+    max-width: 90%;
+    margin: 2rem auto 2.5rem;
+  }
+  .footer-btn {
+    margin: 2.5rem 0;
+  }
+  .footer-lollipop {
+    top: -192px;
+  }
 }
 @media (min-width: 1170px) {
   .img-hero-tablet {
@@ -317,6 +337,25 @@ img {
   .text-para {
     font-size: 18px;
     padding: 0 1.5rem;
+  }
+  .footer {
+    background: lightgray url("../../src/assets/desktop/image-footer.jpg") center/cover no-repeat;
+  }
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .footer-title, .footer-para {
+    max-width: 350px;
+    margin: unset;
+    text-align: left;
+  }
+  .footer-btn {
+    align-self: flex-end;
+  }
+  .footer-lollipop {
+    top: -13.75rem;
   }
 }
 @media (min-width: 1440px) {
