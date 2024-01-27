@@ -340,6 +340,7 @@ img {
   }
   .footer {
     background: lightgray url("../../src/assets/desktop/image-footer.jpg") center/cover no-repeat;
+    height: 19rem;
   }
   .footer-container {
     display: flex;
@@ -351,8 +352,11 @@ img {
     margin: unset;
     text-align: left;
   }
+  .footer-para {
+    padding: unset;
+  }
   .footer-btn {
-    align-self: flex-end;
+    margin: unset;
   }
   .footer-lollipop {
     top: -13.75rem;
