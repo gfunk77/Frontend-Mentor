@@ -11,6 +11,16 @@
   --dark-charcoal: hsl(24, 5%, 18%);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
 .outfit-font {
   font-family: 'Outfit', sans-serif;
   font-optical-sizing: auto;
