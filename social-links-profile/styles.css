@@ -96,12 +96,7 @@ body {
   border: none;
   font-weight: 700;
   cursor: url('./assets/images/cursor.svg'), auto;
-  transition: all 300ms linear;
-}
-
-.btn:hover {
-  background-color: var(--green);
-  color: var(--grey);
+  transition: all 400ms linear;
 }
 
 @media (min-width: 768px) {

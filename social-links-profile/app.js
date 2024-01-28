@@ -7,15 +7,35 @@ const socialMap = new Map([
   ['Twitter', '<i class="fa-brands fa-twitter"></i>'],
   ['Instagram', '<i class="fa-brands fa-instagram"></i>'],
 ]);
-const btn = document.querySelectorAll('.btn');
-btn.forEach((btn) => {
+const social = document.querySelector('.social');
+
+document.addEventListener('DOMContentLoaded', () => {
+  createButtons(social);
+});
+
+function createButtons(element) {
+  for (let key of socialMap.keys()) {
+    const button = document.createElement('button');
+    button.setAttribute('class', 'btn');
+    button.textContent = key;
+    element.appendChild(button);
+    hover(button);
+  }
+}
+
+function hover(btn) {
   const original = btn.textContent.trim();
+
   btn.addEventListener('mouseover', () => {
-    const current = btn.textContent.trim();
-    const newValue = socialMap.get(current);
+    const newValue = socialMap.get(original);
     btn.innerHTML = newValue;
+    btn.style.backgroundColor = 'hsl(75, 94%, 57%)';
+    btn.style.color = '#333';
   });
+
   btn.addEventListener('mouseout', () => {
     btn.textContent = original;
+    btn.style.backgroundColor = '#333';
+    btn.style.color = '#fff';
   });
-});
+}
