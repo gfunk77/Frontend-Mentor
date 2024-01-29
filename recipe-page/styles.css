@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
 :root {
+  --outfit: 'Outfit', sans-serif;
+  --young: 'Young Serif', serif;
   --nutmeg: hsl(14, 45%, 36%);
   --dark-raspberry: hsl(332, 51%, 32%);
   --white: hsl(0, 0%, 100%);
@@ -8,7 +10,7 @@
   --eggshell: hsl(30, 54%, 90%);
   --light-grey: hsl(30, 18%, 87%);
   --wenge-brown: hsl(30, 10%, 34%);
-  --dark-charcoal: hsl(24, 5%, 18%);
+  --dark-charcoal: hsl(15, 4%, 18%);
 }
 
 * {
@@ -21,17 +23,104 @@ img {
   display: block;
   max-width: 100%;
 }
-.outfit-font {
-  font-family: 'Outfit', sans-serif;
+
+section:not(:first-child),
+article {
+  padding: 2rem 0;
+}
+
+section:not(:last-child) {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+ul,
+ol {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+}
+
+ol li p,
+ul li p {
+  margin-left: 1rem;
+}
+
+li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+li::marker {
+  color: var(--nutmeg);
+  font-weight: 700;
+}
+
+body {
+  font-family: var(--outfit);
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  line-height: 1.5;
+
+  color: var(--wenge-brown);
 }
 
-.young-serif-regular {
-  font-family: 'Young Serif', serif;
-  font-weight: 400;
-  font-style: normal;
+.main {
+  min-height: 100vh;
+  background-color: var(--eggshell);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--white);
+  max-width: 736px;
+}
+
+.container {
+  padding: 2.5rem 2rem;
+}
+
+.recipe-title,
+.title {
+  font-family: var(--young);
+  line-height: 1;
+  margin-bottom: 1.5rem;
+}
+
+.recipe-title {
+  font-size: 2rem;
+}
+
+.title {
+  color: var(--nutmeg);
+  font-size: 1.75rem;
+}
+
+.prep {
+  background-color: var(--rose-white);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+}
+
+.sub-title {
+  color: var(--dark-raspberry);
+  margin-bottom: 1rem;
+}
+
+.prep-list-item::marker {
+  color: var(--dark-raspberry);
+}
+
+table {
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1px solid var(--light-grey);
 }
 
 .attribution {
