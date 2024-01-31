@@ -1,0 +1,20 @@
+{
+  "name": "workit-landing-page",
+  "version": "1.0.0",
+  "description": "## Table of contents",
+  "source": "index.html",
+  "scripts": {
+    "watch": "sass --watch scss/main.scss:css/main.css",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  },
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}
