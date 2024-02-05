@@ -1,16 +1,44 @@
 @use 'typography' as *;
 @use 'base' as *;
+@use 'colors' as *;
 
 .main {
   min-height: 100vh;
 }
 
-h1 {
-  color: white;
+.container {
+  max-width: 1114px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1rem;
+  max-width: 1114px;
+  margin: 0 auto;
+
+  &-text {
+    color: $white;
+    border-bottom: 3px solid $secondary;
+    width: fit-content;
+    font-weight: 700;
+    letter-spacing: -0.16px;
+    line-height: 2;
+    transition: all 300ms ease-in-out;
+    @media (min-width: 992px) {
+      font-size: 18px;
+      line-height: 32px;
+    }
+  }
+
+  &-text:hover {
+    cursor: pointer;
+    color: $secondary;
+  }
 }
 
 .purple {
-  background-color: purple;
+  background-color: $primary;
   position: relative;
 
   & .top {
