@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Fraunces-Variable";
+  src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
+}
+@font-face {
+  font-family: "Manrope-Variable";
+  src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
+  font-optical-sizing: auto;
+  font-weight: 200 800;
+  font-style: normal;
+}
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fraunces-Variable", serif;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  line-height: 1.75;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fraunces-Variable", serif;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+h1 {
+  color: white;
+}
+
+.purple {
+  background-color: purple;
+  position: relative;
+}
+.purple .top {
+  width: 100%;
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  z-index: 1;
+}
+
+.pink {
+  position: relative;
+}
+.pink .lower {
+  width: 100%;
+  position: absolute;
+  top: 100;
+}
+
+/*# sourceMappingURL=main.css.map */
