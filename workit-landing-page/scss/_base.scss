@@ -1,5 +1,7 @@
 @use 'typography' as *;
 
+$transition: all 300ms ease-in-out;
+
 *,
 *::after,
 *::before {
