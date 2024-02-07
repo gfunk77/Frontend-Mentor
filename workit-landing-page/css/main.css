@@ -45,8 +45,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+span {
   font-family: "Fraunces-Variable", serif;
+  font-weight: 600;
 }
 
 .main {
@@ -106,12 +108,10 @@ h6 {
   }
 }
 .hero-title {
+  font-size: 50px;
+  line-height: 1;
   color: #ffffff;
   text-align: center;
-  font-family: "Fraunces 144pt";
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 1;
   margin-bottom: 2.5rem;
   transition: all 300ms ease-in-out;
 }
@@ -204,19 +204,15 @@ h6 {
   align-items: center;
 }
 .info-number span {
-  color: #24053e;
-  font-family: "Fraunces 144pt";
   font-size: 1.25rem;
-  font-weight: 600;
   line-height: 36px;
+  color: #24053e;
 }
 
 .info-text-title {
   color: #24053e;
   font-size: 1.75rem;
-  font-family: "Fraunces 144pt";
-  font-weight: 600;
-  line-height: 36px; /* 128.571% */
+  line-height: 36px;
   margin-bottom: 1rem;
 }
 @media (min-width: 992px) {

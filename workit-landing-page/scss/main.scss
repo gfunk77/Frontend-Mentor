@@ -1,6 +1,5 @@
 @use 'typography' as *;
 @use 'base' as *;
-@use 'colors' as *;
 
 .main {
   min-height: 100vh;
@@ -26,8 +25,7 @@
     line-height: 2;
     transition: $transition;
     @media (min-width: 992px) {
-      font-size: 18px;
-      line-height: 32px;
+      @include font(18px, 32px);
     }
   }
 
@@ -58,12 +56,9 @@
   }
 
   &-title {
+    @include font(50px, 1);
     color: $white;
     text-align: center;
-    font-family: 'Fraunces 144pt';
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 1;
     margin-bottom: 2.5rem;
     transition: $transition;
     @media (min-width: 598px) {
@@ -80,17 +75,7 @@
   }
 
   & .btn {
-    color: $primary;
-    background-color: $secondary;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: -0.16px;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    cursor: pointer;
-    transition: $transition;
+    @include btn();
   }
 
   & .btn:hover,
@@ -149,24 +134,17 @@
   align-items: center;
 
   & span {
+    @include font(1.25rem, 36px);
     color: $primary;
-    font-family: 'Fraunces 144pt';
-    font-size: 1.25rem;
-    font-weight: 600;
-    line-height: 36px;
   }
 }
 
 .info-text-title {
   color: $primary;
-  font-size: 1.75rem;
-  font-family: 'Fraunces 144pt';
-  font-weight: 600;
-  line-height: 36px; /* 128.571% */
+  @include font(1.75rem, 36px);
   margin-bottom: 1rem;
   @media (min-width: 992px) {
-    font-size: 2rem;
-    line-height: 40px;
+    @include font(2rem, 40px);
     margin-bottom: 1.75rem;
   }
 }
@@ -174,8 +152,7 @@
 .info-text-desc {
   color: $primary;
   @media (min-width: 992px) {
-    font-size: 18px;
-    line-height: 32px;
+    @include font(18px, 32px);
   }
 }
 
