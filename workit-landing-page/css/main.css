@@ -149,7 +149,17 @@ span {
 }
 
 .pink {
-  background-color: pink;
+  background-color: #fcf8ff;
+  padding-bottom: 3rem;
+  margin-bottom: 4rem;
+}
+.pink-curved-line {
+  position: relative;
+}
+.pink-curved-line .lower {
+  position: absolute;
+  width: 100%;
+  bottom: -128px;
 }
 
 .info-container {
@@ -157,6 +167,7 @@ span {
   flex-direction: column;
   gap: 2.25rem;
   width: 85%;
+  max-width: 1114px;
   margin: 0 auto;
 }
 @media (min-width: 598px) {
@@ -169,7 +180,7 @@ span {
     flex-direction: row;
     justify-content: space-between;
     gap: 26px;
-    width: 85%;
+    width: 95%;
   }
 }
 
