@@ -12,7 +12,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0;
   max-width: 1114px;
   margin: 0 auto;
 
@@ -44,7 +44,7 @@
     position: absolute;
     bottom: -80px;
     left: 0;
-    z-index: 1;
+    // z-index: 1;
   }
 }
 
@@ -71,7 +71,7 @@
 
   &-btn {
     width: fit-content;
-    margin: 0 auto;
+    margin: 0 auto 4rem;
   }
 
   & .btn {
@@ -153,6 +153,16 @@
   color: $primary;
   @media (min-width: 992px) {
     @include font(18px, 32px);
+  }
+}
+
+.phone {
+  margin: 0 auto;
+  width: 90%;
+  transform: translate(0, -90px);
+  max-width: 715px;
+  @media (min-width: 598px) {
+    transform: translate(35px, -110px);
   }
 }
 

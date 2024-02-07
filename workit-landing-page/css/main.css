@@ -62,7 +62,7 @@ span {
 .header {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0;
   max-width: 1114px;
   margin: 0 auto;
 }
@@ -95,7 +95,6 @@ span {
   position: absolute;
   bottom: -80px;
   left: 0;
-  z-index: 1;
 }
 
 .hero {
@@ -127,7 +126,7 @@ span {
 }
 .hero-btn {
   width: fit-content;
-  margin: 0 auto;
+  margin: 0 auto 4rem;
 }
 .hero .btn {
   color: #24053e;
@@ -230,6 +229,18 @@ span {
   .info-text-desc {
     font-size: 18px;
     line-height: 32px;
+  }
+}
+
+.phone {
+  margin: 0 auto;
+  width: 90%;
+  transform: translate(0, -90px);
+  max-width: 715px;
+}
+@media (min-width: 598px) {
+  .phone {
+    transform: translate(35px, -110px);
   }
 }
 
