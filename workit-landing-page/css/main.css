@@ -257,6 +257,15 @@ span {
   }
 }
 
+.founder {
+  margin-top: 10rem;
+  margin-bottom: 1.5rem;
+}
+.founder-image {
+  width: 281px;
+  height: 281px;
+  margin-inline: auto;
+}
 .founder-info {
   width: 90%;
   margin-inline: auto;
@@ -264,6 +273,7 @@ span {
   color: #ffffff;
   padding: 2rem;
   text-align: center;
+  transform: translate(0, -3.5rem);
 }
 .founder-title {
   font-size: 2rem;
@@ -278,6 +288,7 @@ span {
   flex-direction: column;
   align-items: center;
   gap: 3.5rem;
+  margin-bottom: 4rem;
 }
 .footer-icons {
   width: 116px;
