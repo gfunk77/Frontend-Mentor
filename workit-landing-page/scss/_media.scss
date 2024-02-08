@@ -1,0 +1,106 @@
+@use 'base' as *;
+@use 'typography' as *;
+
+@mixin tablet {
+  @media (min-width: 598px) {
+    .hero {
+      padding: 3.5rem 1.15rem 3.25rem;
+
+      &-title {
+        font-size: 60px;
+      }
+    }
+
+    .info-container {
+      width: 72%;
+    }
+
+    .info {
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .phone {
+      transform: translate(35px, -110px);
+    }
+
+    .founder {
+      width: 88%;
+      margin: 10rem auto -3rem;
+
+      &-image {
+        margin: 0;
+      }
+
+      &-info {
+        text-align: left;
+        padding: 3.5rem;
+        max-width: 513px;
+        margin-left: auto;
+        transform: translate(0, -7.5rem);
+      }
+
+      &-title {
+        @include font(3rem, 3.5rem);
+      }
+    }
+
+    .footer {
+      margin-bottom: 7.5rem;
+    }
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 992px) {
+    .header-text {
+      @include font(18px, 32px);
+    }
+
+    .hero-title {
+      font-size: 80px;
+    }
+
+    .info-container {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 26px;
+      width: 95%;
+    }
+
+    .info {
+      text-align: center;
+      flex-direction: column;
+
+      &-text-title {
+        @include font(2rem, 40px);
+        margin-bottom: 1.75rem;
+      }
+
+      &-text-desc {
+        @include font(18px, 32px);
+      }
+    }
+
+    .founder {
+      margin: 10rem auto -10.5rem;
+
+      &-image {
+        width: 477px;
+        height: 477px;
+      }
+
+      &-info {
+        max-width: 730px;
+        padding: 4rem;
+        transform: translate(0, -18.5rem);
+      }
+
+      &-title {
+        @include font(3.5rem, 4rem);
+      }
+    }
+  }
+}

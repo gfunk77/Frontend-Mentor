@@ -1,5 +1,6 @@
 @use 'typography' as *;
 @use 'base' as *;
+@use 'media' as *;
 
 .main {
   min-height: 100vh;
@@ -24,9 +25,9 @@
     letter-spacing: -0.16px;
     line-height: 2;
     transition: $transition;
-    @media (min-width: 992px) {
-      @include font(18px, 32px);
-    }
+    // @media (min-width: 992px) {
+    //   @include font(18px, 32px);
+    // }
   }
 
   &-text:hover {
@@ -42,18 +43,14 @@
   & .top {
     width: 100%;
     position: absolute;
-    bottom: -80px;
+    bottom: -79px;
     left: 0;
-    // z-index: 1;
   }
 }
 
 .hero {
   padding: 4rem 1rem;
   position: relative;
-  @media (min-width: 598px) {
-    padding: 3.5rem 1.15rem 3.25rem;
-  }
 
   &-title {
     @include font(50px, 1);
@@ -61,12 +58,9 @@
     text-align: center;
     margin-bottom: 2.5rem;
     transition: $transition;
-    @media (min-width: 598px) {
-      font-size: 60px;
-    }
-    @media (min-width: 992px) {
-      font-size: 80px;
-    }
+    // @media (min-width: 992px) {
+    //   font-size: 80px;
+    // }
   }
 
   &-btn {
@@ -89,7 +83,7 @@
 .pink {
   background-color: $rose;
   padding-bottom: 3rem;
-  margin-bottom: 4rem; // Check on this after next section
+  margin-bottom: 4rem;
 
   &-curved-line {
     position: relative;
@@ -109,29 +103,20 @@
   width: 85%;
   max-width: 1114px;
   margin: 0 auto;
-  @media (min-width: 598px) {
-    width: 72%;
-  }
-  @media (min-width: 992px) {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 26px;
-    width: 95%;
-  }
+  // @media (min-width: 992px) {
+  //   flex-direction: row;
+  //   justify-content: space-between;
+  //   gap: 26px;
+  //   width: 95%;
+  // }
 }
 
 .info {
   text-align: center;
-  @media (min-width: 598px) {
-    text-align: left;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-  }
-  @media (min-width: 992px) {
-    text-align: center;
-    flex-direction: column;
-  }
+  // @media (min-width: 992px) {
+  //   text-align: center;
+  //   flex-direction: column;
+  // }
 }
 
 .info-number {
@@ -156,17 +141,17 @@
   color: $primary;
   @include font(1.75rem, 36px);
   margin-bottom: 1rem;
-  @media (min-width: 992px) {
-    @include font(2rem, 40px);
-    margin-bottom: 1.75rem;
-  }
+  // @media (min-width: 992px) {
+  //   @include font(2rem, 40px);
+  //   margin-bottom: 1.75rem;
+  // }
 }
 
 .info-text-desc {
   color: $primary;
-  @media (min-width: 992px) {
-    @include font(18px, 32px);
-  }
+  // @media (min-width: 992px) {
+  //   @include font(18px, 32px);
+  // }
 }
 
 .phone {
@@ -174,30 +159,41 @@
   width: 90%;
   transform: translate(0, -90px);
   max-width: 715px;
-  @media (min-width: 598px) {
-    transform: translate(35px, -110px);
-  }
 }
 
 .founder {
-  margin-top: 10rem;
-  margin-bottom: 1.5rem;
+  margin: 10rem auto 0;
+  width: 90%;
+  max-width: 1114px;
+  // @media (min-width: 992px) {
+  //   margin: 10rem auto -10.5rem;
+  // }
   &-image {
     width: 281px;
     height: 281px;
     margin-inline: auto;
+    // @media (min-width: 992px) {
+    //   width: 477px;
+    //   height: 477px;
+    // }
   }
   &-info {
-    width: 90%;
-    margin-inline: auto;
     background-color: $primary;
     color: $white;
     padding: 2rem;
     text-align: center;
     transform: translate(0, -3.5rem);
+    // @media (min-width: 992px) {
+    //   max-width: 730px;
+    //   padding: 4rem;
+    //   transform: translate(0, -18.5rem);
+    // }
   }
   &-title {
     @include font(2rem, 3rem);
+    // @media (min-width: 992px) {
+    //   @include font(3.5rem, 4rem);
+    // }
   }
   &-text {
     margin: 1rem 0 1.5rem;
@@ -223,12 +219,5 @@
   }
 }
 
-// .pink {
-//   position: relative;
-
-//   & .lower {
-//     width: 100%;
-//     position: absolute;
-//     top: 100;
-//   }
-// }
+@include tablet();
+@include desktop();
