@@ -128,7 +128,8 @@ span {
   width: fit-content;
   margin: 0 auto 4rem;
 }
-.hero .btn {
+
+.btn {
   color: #24053e;
   background-color: #44ffa1;
   font-family: inherit;
@@ -141,8 +142,9 @@ span {
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
-.hero .btn:hover,
-.hero .btn:focus {
+
+.btn:hover,
+.btn:focus {
   color: #44ffa1;
   background-color: transparent;
   outline: 2px solid #44ffa1;
@@ -253,6 +255,22 @@ span {
   .phone {
     transform: translate(35px, -110px);
   }
+}
+
+.founder-info {
+  width: 90%;
+  margin-inline: auto;
+  background-color: #24053e;
+  color: #ffffff;
+  padding: 2rem;
+  text-align: center;
+}
+.founder-title {
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.founder-text {
+  margin: 1rem 0 1.5rem;
 }
 
 .footer {

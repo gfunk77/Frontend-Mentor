@@ -73,17 +73,17 @@
     width: fit-content;
     margin: 0 auto 4rem;
   }
+}
 
-  & .btn {
-    @include btn();
-  }
+.btn {
+  @include btn();
+}
 
-  & .btn:hover,
-  .btn:focus {
-    color: $secondary;
-    background-color: transparent;
-    outline: 2px solid $secondary;
-  }
+.btn:hover,
+.btn:focus {
+  color: $secondary;
+  background-color: transparent;
+  outline: 2px solid $secondary;
 }
 
 .pink {
@@ -176,6 +176,23 @@
   max-width: 715px;
   @media (min-width: 598px) {
     transform: translate(35px, -110px);
+  }
+}
+
+.founder {
+  &-info {
+    width: 90%;
+    margin-inline: auto;
+    background-color: $primary;
+    color: $white;
+    padding: 2rem;
+    text-align: center;
+  }
+  &-title {
+    @include font(2rem, 3rem);
+  }
+  &-text {
+    margin: 1rem 0 1.5rem;
   }
 }
 
