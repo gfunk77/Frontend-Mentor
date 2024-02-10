@@ -1,27 +1,4 @@
-@font-face {
-  font-family: "Fraunces-Variable";
-  src: url("../assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-  font-variation-settings: "SOFT" 0, "WONK" 0;
-}
-@font-face {
-  font-family: "Manrope-Variable";
-  src: url("../assets/fonts/manrope/Manrope-VariableFont_wght.ttf") format("truetype");
-  font-optical-sizing: auto;
-  font-weight: 200 800;
-  font-style: normal;
-}
-body {
-  font-family: "Manrope", sans-serif;
-}
-
-h1,
-h2,
-h3 {
-  font-family: "Fraunces-Variable", serif;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&display=swap");
 *,
 *::after,
 *::before {
@@ -32,6 +9,9 @@ h3 {
 
 body {
   font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
   line-height: 1.75;
   overflow-x: hidden;
 }
@@ -48,8 +28,11 @@ h4,
 h5,
 h6,
 span {
-  font-family: "Fraunces-Variable", serif;
+  font-family: "Fraunces", serif;
+  font-optical-sizing: auto;
   font-weight: 600;
+  font-style: normal;
+  font-variation-settings: "SOFT" 0, "WONK" 0;
 }
 
 .main {
@@ -66,6 +49,9 @@ span {
   padding: 2rem 1rem 0;
   max-width: 1114px;
   margin: 0 auto;
+}
+.header-img {
+  object-fit: contain;
 }
 .header-text {
   color: #ffffff;
