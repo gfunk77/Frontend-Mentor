@@ -78,7 +78,7 @@
 }
 
 @mixin desktop {
-  @media (min-width: 992px) {
+  @media (min-width: 1090px) {
     .header-text {
       @include font(18px, 32px);
     }

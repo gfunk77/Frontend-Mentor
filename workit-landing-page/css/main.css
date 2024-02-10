@@ -163,7 +163,7 @@ span {
 }
 
 .info-text-desc {
-  color: #24053e;
+  color: #584d62;
 }
 
 .phone {
@@ -277,7 +277,7 @@ span {
     margin-bottom: 7.5rem;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1090px) {
   .header-text {
     font-size: 18px;
     line-height: 32px;
