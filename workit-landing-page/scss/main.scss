@@ -39,13 +39,6 @@
 .purple {
   background-color: $primary;
   position: relative;
-
-  // & .top {
-  //   width: 100%;
-  //   position: absolute;
-  //   bottom: -79px;
-  //   left: 0;
-  // }
 }
 
 .hero {
@@ -90,12 +83,6 @@
 
   &-curved-line {
     position: relative;
-
-    // & .lower {
-    //   position: absolute;
-    //   width: 100%;
-    //   bottom: -128px;
-    // }
   }
 }
 
