@@ -71,12 +71,6 @@ span {
   background-color: #24053e;
   position: relative;
 }
-.purple .top {
-  width: 100%;
-  position: absolute;
-  bottom: -79px;
-  left: 0;
-}
 
 .hero {
   padding: 4rem 1rem;
