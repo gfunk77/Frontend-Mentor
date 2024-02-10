@@ -33,6 +33,7 @@ h3 {
 body {
   font-family: "Manrope", sans-serif;
   line-height: 1.75;
+  overflow-x: hidden;
 }
 
 img {
@@ -106,6 +107,12 @@ span {
 .hero-btn {
   width: fit-content;
   margin: 0 auto 4rem;
+}
+
+.slinky-1,
+.slinky-2,
+.slinky-3 {
+  display: none;
 }
 
 .btn {
@@ -240,6 +247,25 @@ span {
   .hero-title {
     font-size: 60px;
   }
+  .slinky-1,
+  .slinky-2,
+  .slinky-3 {
+    display: block;
+    position: absolute;
+    transition: all 300ms ease-in-out;
+  }
+  .slinky-1 {
+    top: 0;
+    left: -220px;
+  }
+  .slinky-2 {
+    bottom: 24px;
+    right: -100px;
+  }
+  .slinky-3 {
+    bottom: -100px;
+    right: 16px;
+  }
   .info-container {
     width: 72%;
   }
@@ -260,6 +286,7 @@ span {
     margin: 0;
   }
   .founder-info {
+    position: relative;
     text-align: left;
     padding: 3.5rem;
     width: 75%;
@@ -282,6 +309,18 @@ span {
   }
   .hero-title {
     font-size: 80px;
+  }
+  .slinky-1 {
+    top: 31px;
+    left: -143px;
+  }
+  .slinky-2 {
+    bottom: 24px;
+    right: -48px;
+  }
+  .slinky-3 {
+    bottom: -62px;
+    right: 48px;
   }
   .info-container {
     flex-direction: row;

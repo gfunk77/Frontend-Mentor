@@ -25,9 +25,6 @@
     letter-spacing: -0.16px;
     line-height: 2;
     transition: $transition;
-    // @media (min-width: 992px) {
-    //   @include font(18px, 32px);
-    // }
   }
 
   &-text:hover {
@@ -58,15 +55,18 @@
     text-align: center;
     margin-bottom: 2.5rem;
     transition: $transition;
-    // @media (min-width: 992px) {
-    //   font-size: 80px;
-    // }
   }
 
   &-btn {
     width: fit-content;
     margin: 0 auto 4rem;
   }
+}
+
+.slinky-1,
+.slinky-2,
+.slinky-3 {
+  display: none;
 }
 
 .btn {
@@ -103,20 +103,10 @@
   width: 85%;
   max-width: 1114px;
   margin: 0 auto;
-  // @media (min-width: 992px) {
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   gap: 26px;
-  //   width: 95%;
-  // }
 }
 
 .info {
   text-align: center;
-  // @media (min-width: 992px) {
-  //   text-align: center;
-  //   flex-direction: column;
-  // }
 }
 
 .info-number {
@@ -141,17 +131,10 @@
   color: $primary;
   @include font(1.75rem, 36px);
   margin-bottom: 1rem;
-  // @media (min-width: 992px) {
-  //   @include font(2rem, 40px);
-  //   margin-bottom: 1.75rem;
-  // }
 }
 
 .info-text-desc {
   color: $primary;
-  // @media (min-width: 992px) {
-  //   @include font(18px, 32px);
-  // }
 }
 
 .phone {
@@ -165,36 +148,25 @@
   margin: 10rem auto 0;
   width: 90%;
   max-width: 1114px;
-  // @media (min-width: 992px) {
-  //   margin: 10rem auto -10.5rem;
-  // }
+
   &-image {
     width: 281px;
     height: 281px;
     margin-inline: auto;
-    // @media (min-width: 992px) {
-    //   width: 477px;
-    //   height: 477px;
-    // }
   }
+
   &-info {
     background-color: $primary;
     color: $white;
     padding: 2rem;
     text-align: center;
     transform: translate(0, -3.5rem);
-    // @media (min-width: 992px) {
-    //   max-width: 730px;
-    //   padding: 4rem;
-    //   transform: translate(0, -18.5rem);
-    // }
   }
+
   &-title {
     @include font(2rem, 3rem);
-    // @media (min-width: 992px) {
-    //   @include font(3.5rem, 4rem);
-    // }
   }
+
   &-text {
     margin: 1rem 0 1.5rem;
   }
