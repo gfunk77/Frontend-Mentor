@@ -124,11 +124,6 @@ span {
 .pink-curved-line {
   position: relative;
 }
-.pink-curved-line .lower {
-  position: absolute;
-  width: 100%;
-  bottom: -128px;
-}
 
 .info-container {
   display: flex;
