@@ -53,6 +53,12 @@
     transition: $transition;
   }
 
+  .tailored {
+    display: inline-block;
+    border-bottom: 3px solid $secondary;
+    margin-bottom: 2px;
+  }
+
   &-btn {
     width: fit-content;
     margin: 0 auto 4rem;
