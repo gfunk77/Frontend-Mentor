@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+$white: #ffffff;
+$pink: #ad28eb;
+$light-pink: #f9f0ff;
+$pale-purple: #8c6991;
+$dark-purple: #2f1533;
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $light-pink;
+
+  font-family: 'Work Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.img {
+  width: 100vw;
+}
+
+h1,
+h4,
+p {
+  margin: 0;
+}
+
+h1,
+h4 {
+  color: $dark-purple;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 14px;
+  color: $pale-purple;
+  line-height: 1.5;
+}
