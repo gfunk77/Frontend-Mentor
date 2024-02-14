@@ -20,6 +20,9 @@
   @include screen() {
     padding: 2.5rem;
   }
+  @media (min-width: 1100px) {
+    top: -18vh;
+  }
 }
 
 .header {
@@ -55,6 +58,10 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .attribution a {
   color: $dark-purple;

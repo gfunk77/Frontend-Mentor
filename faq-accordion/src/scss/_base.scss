@@ -56,12 +56,22 @@ h1 {
 
 h4 {
   font-weight: 600;
-  font-size: 1.125rem;
+  @include screen() {
+    font-size: 1.125rem;
+  }
 }
 
+.active,
 h4:hover {
   color: $pink;
-  cursor: pointer;
+  cursor: url('../../assets/images/cursor.svg'), auto;
+}
+
+.plus:hover,
+.plus:focus,
+.minus:hover,
+.minus:focus {
+  cursor: url('../../assets/images/cursor.svg'), auto;
 }
 
 p {
