@@ -5,6 +5,13 @@ $pink: #ad28eb;
 $light-pink: #f9f0ff;
 $pale-purple: #8c6991;
 $dark-purple: #2f1533;
+$breakpoint: 600px;
+
+@mixin screen {
+  @media (min-width: $breakpoint) {
+    @content;
+  }
+}
 
 body {
   min-height: 100vh;
@@ -41,14 +48,28 @@ h4 {
 
 h1 {
   font-weight: 700;
+  font-size: 2rem;
+  @include screen() {
+    font-size: 3.5rem;
+  }
 }
 
 h4 {
   font-weight: 600;
+  font-size: 1.125rem;
+}
+
+h4:hover {
+  color: $pink;
+  cursor: pointer;
 }
 
 p {
   font-size: 14px;
+  margin-top: 1.5rem;
   color: $pale-purple;
   line-height: 1.5;
+  @include screen() {
+    font-size: 1rem;
+  }
 }
