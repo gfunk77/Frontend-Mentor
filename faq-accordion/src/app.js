@@ -56,22 +56,25 @@ function renderQuestions(data) {
   container.innerHTML = html;
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-  renderQuestions(DATA);
+function accordion() {
+  const questions = document.querySelectorAll('.question');
 
-  const questions = document.querySelectorAll('h4');
+  questions.forEach((item) => {
+    item.addEventListener('click', () => {
+      const panel = item.nextElementSibling;
+      const question = item.querySelector('h4');
+      const plus = item.querySelector('.plus');
+      const minus = item.querySelector('.minus');
 
-  questions.forEach((element, index) => {
-    element.addEventListener('click', () => {
-      element.classList.toggle('active');
-
-      const panel = document.querySelectorAll('.panel')[index];
-      const plus = document.querySelectorAll('.plus')[index];
-      const minus = document.querySelectorAll('.minus')[index];
-
-      panel.classList.toggle('hidden');
       plus.classList.toggle('hidden');
       minus.classList.toggle('hidden');
+      question.classList.toggle('active');
+      panel.classList.toggle('hidden');
     });
   });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  renderQuestions(DATA);
+  accordion();
 });
