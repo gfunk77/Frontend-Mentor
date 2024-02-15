@@ -29,7 +29,7 @@ const SVG = {
 };
 
 function renderQuestions(data) {
-  const container = document.querySelector('.card');
+  const container = document.querySelector('.content');
   let html = `
     <header class="header">
         ${SVG.star}
