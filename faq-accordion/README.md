@@ -23,10 +23,10 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![]($$$)
+![](./solutions/mobile.png)
 
 Desktop
-![]($$$)
+![](./solutions/desktop.png)
 
 ### Links
 
@@ -35,7 +35,7 @@ Desktop
 
 ### Built with
 
-- html/css/js
+- html/scss/js
 
 ## Author
 
