@@ -28,6 +28,160 @@ img {
   max-width: 100%;
 }
 
+.main {
+  min-height: 100vh;
+  background-color: $very-dark-blue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  border-radius: 15px;
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
+  width: 88%;
+  max-width: 412px;
+  color: $white;
+
+  &-container {
+    padding: 1.5rem;
+  }
+}
+
+.star {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.title {
+  color: $white;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1rem 0 0.625rem;
+}
+
+.thanks {
+  text-align: center;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+
+  & p {
+    color: $orange;
+    font-size: 14px;
+    line-height: 22px;
+    width: fit-content;
+    background-color: $dark-blue;
+    border-radius: 22.5px;
+    padding: 5px 12px;
+    margin: 1.5rem 0;
+  }
+}
+
+.text {
+  color: $light-grey;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+
+.number {
+  width: 42px;
+  height: 42px;
+  background-color: $dark-blue;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $medium-grey;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.175px;
+}
+
+.btn {
+  width: 100%;
+  border-radius: 22.5px;
+  background-color: $orange;
+  padding: 0.75rem 0;
+  margin-bottom: 0.5rem;
+  border: none;
+
+  color: $white;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1.867px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 500px) {
+  .card {
+    border-radius: 30px;
+
+    &-container {
+      padding: 2rem;
+    }
+  }
+
+  .title {
+    font-size: 1.75rem;
+    margin: 1.875rem 0 0.5rem;
+  }
+
+  .thanks {
+    margin-top: 5px;
+  }
+
+  .text {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .rating p {
+    margin: 2rem 0;
+  }
+
+  .numbers {
+    margin: 1.5rem 0 2rem;
+  }
+
+  .number {
+    width: 51px;
+    height: 51px;
+  }
+
+  .btn {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
