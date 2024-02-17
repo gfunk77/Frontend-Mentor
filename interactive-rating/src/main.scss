@@ -8,6 +8,26 @@ $dark-blue: #252d37;
 $very-dark-blue: #121417;
 $bold: 700;
 
+@mixin flex($display, $justify, $align: '') {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin box($width, $height, $background: '', $radius: '') {
+  width: $width;
+  height: $height;
+  background-color: $background;
+  border-radius: $radius;
+}
+
+@mixin font($color, $size, $weight: '', $line: '') {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $line;
+}
+
 *,
 *::after,
 *::before {
@@ -32,9 +52,7 @@ img {
   min-height: 100vh;
   background-color: $very-dark-blue;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center);
 }
 
 .card {
@@ -50,25 +68,17 @@ img {
 }
 
 .star {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: $dark-blue;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include box(40px, 40px, $dark-blue, 50%);
+  @include flex(flex, center, center);
 }
 
 .img {
-  display: flex;
-  justify-content: center;
+  @include flex(flex, center);
   margin-top: 10px;
 }
 
 .title {
-  color: $white;
-  font-size: 1.5rem;
-  font-weight: 700;
+  @include font($white, 1.5rem, $bold);
   margin: 1rem 0 0.625rem;
 }
 
@@ -77,13 +87,10 @@ img {
 }
 
 .rating {
-  display: flex;
-  justify-content: center;
+  @include flex(flex, center);
 
   & p {
-    color: $orange;
-    font-size: 14px;
-    line-height: 22px;
+    @include font($orange, 14px, '', 22px);
     width: fit-content;
     background-color: $dark-blue;
     border-radius: 22.5px;
@@ -93,31 +100,18 @@ img {
 }
 
 .text {
-  color: $light-grey;
-  font-size: 14px;
-  line-height: 22px;
+  @include font($light-grey, 14px, '', 22px);
 }
 
 .numbers {
-  display: flex;
-  justify-content: space-between;
+  @include flex(flex, space-between);
   margin: 1.5rem 0;
 }
 
 .number {
-  width: 42px;
-  height: 42px;
-  background-color: $dark-blue;
-  border-radius: 50%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  color: $medium-grey;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.5rem;
+  @include box(42px, 42px, $dark-blue, 50%);
+  @include flex(flex, center, center);
+  @include font($medium-grey, 14px, $bold, 1.5rem);
   letter-spacing: 0.175px;
 }
 
@@ -128,12 +122,9 @@ img {
   padding: 0.75rem 0;
   margin-bottom: 0.5rem;
   border: none;
-
-  color: $white;
   font-family: inherit;
-  font-size: 14px;
-  font-weight: 700;
   letter-spacing: 1.867px;
+  @include font($white, 14px, $bold, '');
 }
 
 .hidden {
@@ -163,6 +154,10 @@ img {
     line-height: 24px;
   }
 
+  .thanks-text {
+    margin-bottom: 0.53125rem;
+  }
+
   .rating p {
     margin: 2rem 0;
   }
@@ -172,8 +167,7 @@ img {
   }
 
   .number {
-    width: 51px;
-    height: 51px;
+    @include box(51px, 51px);
   }
 
   .btn {
