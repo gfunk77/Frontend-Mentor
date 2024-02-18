@@ -37,6 +37,10 @@ function makeSelection(e) {
 function displayThanks() {
   const rating = document.getElementById('user-rating');
 
+  if (!finalRating) {
+    alert('You must select a rating');
+  }
+
   if (Number.isInteger(finalRating)) {
     rating.innerText = finalRating;
   } else {
