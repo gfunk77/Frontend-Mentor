@@ -20,7 +20,6 @@ function calcRating(e) {
   }
 
   finalRating = ratings.reduce((acc, cur) => acc + cur, 0) / ratings.length;
-  console.log(finalRating.toFixed(1));
 }
 
 function makeSelection(e) {

@@ -23,13 +23,19 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![]($$$)
+![](./solutions/mobile.png);
+
+Mobile Submitted
+![](./solutions/mobile-thanks-state.png);
+
+Active
+![](./solutions/active-state.png);
 
 Desktop
-![]($$$)
+![](./solutions/desktop.png)
 
-Submitted
-![]($$$)
+Desktop Submitted
+![](./solutions/desktop-thanks.png)
 
 ### Links
 
