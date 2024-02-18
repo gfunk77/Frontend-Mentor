@@ -113,6 +113,13 @@ img {
   @include flex(flex, center, center);
   @include font($medium-grey, 14px, $bold, 1.5rem);
   letter-spacing: 0.175px;
+  transition: 400ms all ease-in-out;
+
+  &:hover {
+    background-color: $orange;
+    color: $white;
+    cursor: pointer;
+  }
 }
 
 .btn {
@@ -125,6 +132,13 @@ img {
   font-family: inherit;
   letter-spacing: 1.867px;
   @include font($white, 14px, $bold, '');
+  transition: 400ms all ease-in-out;
+
+  &:hover {
+    background-color: $white;
+    color: $orange;
+    cursor: pointer;
+  }
 }
 
 .hidden {
