@@ -4,57 +4,33 @@ const ratingState = document.getElementById('rating-state');
 const thanksState = document.getElementById('thanks-state');
 const submitBtn = document.querySelector('.btn');
 const numbers = document.querySelectorAll('.number');
-const ratings = [];
+let selected = null;
 let finalRating = null;
 
-function calcRating(e) {
+function getRating(e) {
   const number = e.target;
-  const value = +number.innerText;
-
-  const index = ratings.indexOf(value);
-
-  if (index === -1) {
-    ratings.push(value);
-  } else {
-    ratings.splice(index, 1);
+  if (selected !== null) {
+    selected.classList.remove('active');
   }
-
-  finalRating = ratings.reduce((acc, cur) => acc + cur, 0) / ratings.length;
-}
-
-function makeSelection(e) {
-  const number = e.target;
-
-  if (number.style.backgroundColor === '' && number.style.color === '') {
-    number.style.backgroundColor = '#7c8798';
-    number.style.color = '#fff';
-  } else {
-    number.style.backgroundColor = '';
-    number.style.color = '';
-  }
+  number.classList.add('active');
+  selected = number;
+  finalRating = selected.innerText;
 }
 
 function displayThanks() {
-  const rating = document.getElementById('user-rating');
-
   if (!finalRating) {
     alert('You must select a rating');
   }
 
-  if (Number.isInteger(finalRating)) {
-    rating.innerText = finalRating;
-  } else {
-    rating.innerText = finalRating.toFixed(1);
-  }
+  const rating = document.getElementById('user-rating');
+  rating.innerText = finalRating;
+
   ratingState.classList.add('hidden');
   thanksState.classList.remove('hidden');
 }
 
 numbers.forEach((number) => {
-  number.addEventListener('click', (e) => {
-    makeSelection(e);
-    calcRating(e);
-  });
+  number.addEventListener('click', getRating);
 });
 
 submitBtn.addEventListener('click', displayThanks);

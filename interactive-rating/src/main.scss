@@ -150,6 +150,11 @@ img {
   display: none;
 }
 
+.active {
+  background-color: $medium-grey;
+  color: $white;
+}
+
 @media (min-width: 500px) {
   .card {
     border-radius: 30px;
