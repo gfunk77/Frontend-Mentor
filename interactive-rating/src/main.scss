@@ -103,6 +103,11 @@ img {
   @include font($light-grey, 14px, '', 22px);
 }
 
+.thanks-text {
+  text-align: center;
+  padding: 0 0.5rem;
+}
+
 .numbers {
   @include flex(flex, space-between);
   margin: 1.5rem 0;
