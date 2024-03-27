@@ -1,8 +1,115 @@
 @use 'base' as *;
 
+.main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 90%;
+  max-width: 327px;
+  border-radius: $radius;
+  background-color: $white;
+  box-shadow: $shadow;
+}
+
+.img {
+  border-radius: 8px 8px 0 0;
+}
+
+.card-body {
+  padding: 32px 32px 0;
+}
+
+.desc {
+  font-size: 16px;
+  font-weight: $font-bold;
+  letter-spacing: 0.2px;
+  color: $dark-gray-blue;
+  margin-bottom: 12px;
+}
+
+.quote {
+  line-height: 20px;
+  letter-spacing: 0.122px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  padding: 32px 32px 20px;
+}
+
+.footer-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  margin-right: 16px;
+}
+
+.name {
+  color: $dark-gray-blue;
+  line-height: 20px;
+  letter-spacing: 0.122px;
+}
+
+.date {
+  color: $gray-blue;
+  line-height: 20px;
+  letter-spacing: 0.122px;
+}
+
+.share-icon {
+  width: 32px;
+  height: 32px;
+  background-color: $light-gray-blue;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.share-arrow-bg {
+  background-color: $dark-blue;
+}
+.share-arrow {
+  color: $white;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.share {
+  text-transform: uppercase;
+  margin-right: 21px;
+  line-height: 20px;
+  letter-spacing: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+.active {
+  background-color: $dark-gray-blue;
+  padding-inline: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 20px;
+  border-radius: 0 0 8px 8px;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: fixed;
+  bottom: 1rem;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
