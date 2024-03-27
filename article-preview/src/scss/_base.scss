@@ -1,0 +1,34 @@
+$font: 'Manrope', sans-serif;
+$font-size: 13px;
+$font-bold: 700;
+$dark-gray-blue: #48556a;
+$dark-blue: #6d7f97;
+$gray-blue: #9eafc2;
+$light-gray-blue: #ecf2f8;
+$white: #fff;
+$radius: 10px;
+$shadow: 0px 40px 40px -10px rgba(201, 213, 225, 0.5);
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font;
+  font-size: $font-size;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 1.5;
+  color: $dark-blue;
+  background-color: $light-gray-blue;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
