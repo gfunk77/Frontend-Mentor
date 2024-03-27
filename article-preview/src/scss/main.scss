@@ -88,6 +88,7 @@
 .share {
   text-transform: uppercase;
   margin-right: 21px;
+  color: $gray-blue;
   line-height: 20px;
   letter-spacing: 5px;
 }
@@ -113,4 +114,14 @@
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+.fa-brands {
+  font-size: 22px;
+  color: white;
+}
+
+.icon-container {
+  display: flex;
+  gap: 14px;
 }
