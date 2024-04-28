@@ -125,3 +125,26 @@
   display: flex;
   gap: 14px;
 }
+
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    max-width: 730px;
+  }
+
+  .img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;
+    transform: translateX(20px, 0);
+  }
+
+  .desc {
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .card-footer {
+    border-radius: 0 0 8px 0;
+  }
+}
