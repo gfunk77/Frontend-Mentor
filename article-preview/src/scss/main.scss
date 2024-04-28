@@ -126,6 +126,44 @@
   gap: 14px;
 }
 
+.card-footer {
+  position: relative;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: $dark-gray-blue;
+  border-radius: $radius;
+  top: -40px;
+  left: 290px;
+  display: none;
+  align-items: center;
+  padding: 16px 2rem;
+  filter: drop-shadow(0px 10px 10px rgba(201, 213, 225, 0.5));
+}
+
+.tooltip-icon-container {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+.pointer {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  bottom: 0px;
+  top: 44px;
+  left: 108px;
+  background-color: $dark-gray-blue;
+  transform: rotate(45deg);
+}
+
+.tooltip i {
+  font-size: 1rem;
+  margin-top: 0.2rem;
+}
+
 @media (min-width: 768px) {
   .card {
     display: flex;
