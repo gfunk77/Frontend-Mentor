@@ -29,6 +29,11 @@ function checkScreenSize() {
       icon.removeEventListener('click', toggleClasses);
       icon.addEventListener('mouseover', handleTooltip);
       icon.addEventListener('mouseout', handleTooltip);
+      if (cardFooter.classList.contains('active')) {
+        cardFooter.classList.remove('active');
+        info.classList.remove('hidden');
+        icons.classList.add('hidden');
+      }
     } else {
       icon.addEventListener('click', toggleClasses);
       shareIcon[0].classList.remove('tooltip');

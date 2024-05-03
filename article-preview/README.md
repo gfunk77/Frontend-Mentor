@@ -23,13 +23,16 @@ Users should be able to:
 ### Screenshot
 
 Mobile
-![]($$$)
+![](./solutions/Mobile.png)
 
-Active
-![]($$$)
+Mobile Active
+![](./solutions/Mobile-Active.png)
 
 Desktop
-![]($$$)
+![](./solutions/Desktop.png)
+
+Desktop Active
+![](./solutions/Desktop-Active.png)
 
 ### Links
 
@@ -38,7 +41,7 @@ Desktop
 
 ### Built with
 
-- html/css
+- html/scss/js
 
 ## Author
 

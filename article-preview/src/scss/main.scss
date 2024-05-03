@@ -73,9 +73,15 @@
   cursor: pointer;
 }
 
+.info .share-icon:hover {
+  background-color: $dark-blue;
+  color: $white;
+}
+
 .share-arrow-bg {
   background-color: $dark-blue;
 }
+
 .share-arrow {
   color: $white;
 }
